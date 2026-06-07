@@ -6,17 +6,56 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /*--font-primary: "Urbanist", sans-serif; */
-  /*--font-primary: "Amatic SC", sans-serif; */
- --font-primary: "Oswald", sans-serif;
-  --font-secondary: "Inter", sans-serif;
+  /* --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  /* --font-secondary: "Inter", sans-serif; */
+  /* --font-default: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif; */
+  --font-primary: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-secondary: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-default: "Lora", Georgia, serif;
+
+  /* --font-primary: "IBM Plex Sans", sans-serif;
+  --font-secondary: "Source Sans 3", sans-serif;*/
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-header h2,
+.section-header p,
+.hero h2,
+.header .logo h1 {
+  font-family: var(--font-primary);
+}
+
+body,
+.navbar a,
+.hero p,
+p,
+li {
+  font-family: var(--font-default);
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn,
+.btn-book-a-table,
+.more-btn,
+.scroll-top {
+  font-family: var(--font-primary);
 }
 
 /* Colors */

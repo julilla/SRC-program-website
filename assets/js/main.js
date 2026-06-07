@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <ul>
               <li><a href="mission.html">Our mission</a></li>
               <li><a href="people.html">People</a></li>
-              <li><a href="connect.html">Connect</a></li>
+              <!-- Future contact page: <li><a href="connect.html">Connect</a></li> -->
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Education</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </ul>
       </nav><!-- .navbar -->
 
-      <a class="btn-book-a-table" href="connect.html">Join our mailing list</a>
+      <!-- Future mailing-list CTA: <a class="btn-book-a-table" href="connect.html">Join our mailing list</a> -->
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 

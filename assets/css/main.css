@@ -195,6 +195,59 @@ section {
   }
 }
 
+
+.breadcrumbs.page-hero {
+  margin-top: 90px;
+  padding: 38px 0 34px 0;
+  background: #f7f7f8;
+  border-bottom: 1px solid rgba(55, 55, 63, 0.08);
+}
+
+.page-hero .page-hero-content {
+  max-width: 780px;
+}
+
+.page-hero .eyebrow {
+  margin: 0 0 8px 0;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.breadcrumbs.page-hero h2 {
+  margin: 0 0 10px 0;
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+
+.page-hero .page-description {
+  max-width: 680px;
+  margin: 0 0 18px 0;
+  color: #5f6268;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.breadcrumbs.page-hero ol {
+  color: #767984;
+}
+
+@media (max-width: 575px) {
+  .breadcrumbs.page-hero {
+    margin-top: 70px;
+    padding: 28px 0 26px 0;
+  }
+
+  .breadcrumbs.page-hero h2 {
+    font-size: 32px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/

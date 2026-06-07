@@ -8,6 +8,95 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  function renderSharedLayout() {
+    const headerTarget = document.querySelector('#site-header');
+    if (headerTarget) {
+      headerTarget.outerHTML = `
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <h1><span>SRC</span>@Brown CS</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="mission.html">Our mission</a></li>
+              <li><a href="people.html">People</a></li>
+              <li><a href="connect.html">Connect</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Education</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>STA program</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="sta-program.html">Program structure</a></li>
+                  <li><a href="apply.html">Apply to be an STA</a></li>
+                </ul>
+              </li>
+              <li><a href="curriculum.html">SRC curriculum</a></li>
+              <li><a href="https://srch.cs.brown.edu">SRC Handbook</a></li>
+            </ul>
+          </li>
+          <li><a href="research.html">Research</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="connect.html">Join our mailing list</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->`;
+    }
+
+    const footerTarget = document.querySelector('#site-footer');
+    if (footerTarget) {
+      footerTarget.outerHTML = `
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-envelope icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>External inquiries: </strong><a href="mailto:julia_netter@brown.edu">julia_netter@brown.edu</a><br>
+              <strong>Brown students: </strong><a href="mailto:hstas@lists.cs.brown.edu">hstas@lists.cs.brown.edu</a><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links d-flex">
+          <i class="bi bi-link-45deg icon"></i>
+          <div>
+            <h4>Brown Computer Science</h4>
+            <p>
+              <a href="https://cs.brown.edu">https://cs.brown.edu</a><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links d-flex">
+          <i class=""></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->`;
+    }
+  }
+
+  renderSharedLayout();
+
   /**
    * Preloader
    */

@@ -14,3 +14,8 @@ The code for the modular components (header, sidebar, and footer) are in main.js
 kathy to-dos:
 - edit main bar to show when you are currently on a website section
 - check color contrast
+- bulletpoints in curriculum
+- remove hover from curriculum
+- reformat cs class table
+- add logo to every tab
+- check mobile accessibility

@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Oswald:wght@200..700&family=Play:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -28,14 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Yummy
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -59,147 +51,188 @@
     </div><!-- End Page Hero -->
 
 
-    <!-- ======= SRC team section ======= -->
-    <section id="people" class="chefs bg">
+    <!-- ======= SRC Program Team section ======= -->
+    <section id="people" class="program-team">
       <div class="container">
 
-        <div class="section-header">
-         <!-- <h2></h2> -->
-         <h2>SRC Program <span>Team</span></h2>
+        <div class="section-header team-section-header">
+          <h2>Program <span>Team</span></h2>
+          <p class="section-kicker">The staff and student leaders who guide SRC work across Brown CS.</p>
         </div>
 
+        <div class="row gy-4 team-grid">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-            <div class="chef-member">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="team-member-card">
               <div class="member-img">
-                <img src="assets/img/team/julia-large.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/julia-large.jpg" class="img-fluid" alt="Julia Netter">
               </div>
               <div class="member-info">
+                <span class="role-label">Program Director</span>
                 <h4>Julia Netter</h4>
-                <span>Program Director</span>
+                <p class="member-title">Lecturer, Brown Computer Science</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
 
-          <div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-            <div class="chef-member">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="team-member-card">
               <div class="member-img">
-                <img src="assets/img/team/kathi.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/kathi.jpg" class="img-fluid" alt="Kathi Fisler">
               </div>
               <div class="member-info">
+                <span class="role-label">Program Advisor</span>
                 <h4>Kathi Fisler</h4>
-                <span>Program Advisor</span>
+                <p class="member-title">Professor, Brown Computer Science</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
 
-          <div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-            <div class="chef-member">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="team-member-card">
               <div class="member-img">
-                <img src="assets/img/team/kathy-li.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/kathy-li.jpg" class="img-fluid" alt="Kathy Li">
               </div>
               <div class="member-info">
+                <span class="role-label">Head STA</span>
                 <h4>Kathy Li</h4>
-                <span>Head-STA</span>
+                <p class="member-title">Computer Science, Class of 2027</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
 
-          <div class="col-lg-3 col-md-3 d-flex align-items-stretch">
-            <div class="chef-member">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="team-member-card">
               <div class="member-img">
-                <img src="assets/img/team/doren-hsiao-wecksler.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/doren-hsiao-wecksler.jpg" class="img-fluid" alt="Doren Hsiao-Wecksler">
               </div>
               <div class="member-info">
+                <span class="role-label">Head STA</span>
                 <h4>Doren Hsiao-Wecksler</h4>
-                <span>Head-STA</span>
+                <p class="member-title">Computer Science, Class of 2026</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
-      </div>
-    </section><!-- End SRC team Section -->
+          </div>
 
-      <!-- ======= STAs section ======= -->
-      <section id="about" class="about">
+        </div>
+
+        <!-- Former Head STAs -->
+        <div class="mt-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="accordion" id="headStaAccordion">
+            <div class="accordion-item history-accordion-item">
+              <h2 class="accordion-header" id="headStaHeading">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#headStaCollapse" aria-expanded="false" aria-controls="headStaCollapse">
+                  <span class="accordion-eyebrow">Program leadership</span>
+                  <span class="accordion-title">Former Head STAs</span>
+                </button>
+              </h2>
+              <div id="headStaCollapse" class="accordion-collapse collapse" aria-labelledby="headStaHeading" data-bs-parent="#headStaAccordion">
+                <div class="accordion-body">
+                  <p class="accordion-intro">Former Head STAs have helped shape STA mentoring, course partnerships, and the program's teaching materials over time.</p>
+                  <div class="former-head-sta-list">
+                    <p><b>AY 2025-2026:</b> Kathy Li, Doren Hsiao-Wecksler</p>
+                    <p><b>AY 2024-2025:</b> Anna Hurd, Doren Hsiao-Wecksler</p>
+                    <p><b>AY 2023-2024:</b> Eva Schiller, Swetabh Changkakoti, Anika Bahl</p>
+                    <!-- <p><b>AY 2022-2023:</b> TODO: is it correct that there are no HSTAs this year? also some of the HSTAs didn't hold their position for a full year, but i felt it was overkill to include "(Fall 2023)" or something-->
+                    <p><b>AY 2021-2022:</b> Suyash Kothari, Zeynep Aydin, Lena Cohen</p>
+                    <p><b>AY 2020-2021:</b> Lena Cohen, Shenandoah Duraideivamani </p>
+                    <p><b>AY 2019-2020:</b> Jessica Dai, Stanley Yip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End SRC Program Team Section -->
+
+
+    <!-- ======= STAs section ======= -->
+    <section id="about" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-           <h2>Socially Responsible Computing <span>Teaching Assistants</span> (STAs)</h2>
+          <h2>Socially Responsible Computing <span>Teaching Assistants</span></h2>
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/team/STAs-Fall-23.jpg) ;" alt="Group picture of the current cohort of STAs standing in front of CIT" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/team/STAs-Fall-23.jpg);" alt="Group picture of the current cohort of STAs standing in front of CIT" data-aos="fade-up" data-aos-delay="150">
           </div>
           <div class="col-lg-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
                 Socially Responsible Computing Teaching Assistants (STAs) are embedded in a range of CS courses each semester to help develop and implement content on the social impact of technology and tailor it to the technical content of each course.
               </p>
-              
-              <p style="font-weight: 600; color: var(--color-primary); font-size: 18px; margin-top: 20px;">Spring 2026 STAs</p>
-              <ul>
-                <!--<li><i class="bi bi-record-fill"></i> <b>Head-STAs:</b> Kathy Li, Doren Hsiao-Wecksler</li>-->
-                <li><i class="bi bi-record-fill"></i> <b>CSCI 0111:</b> Cunyan Ma</li>
-                <li><i class="bi bi-record-fill"></i> <b>CSCI 0200:</b> Alison Zeng</li>
-                <li><i class="bi bi-record-fill"></i> <b>CSCI 0220:</b> Zach Quitkin</li>
-                <li><i class="bi bi-record-fill"></i> <b>CSCI 0410:</b> Avery Espiritu</li>
-                <li><i class="bi bi-record-fill"></i> <b>CSCI 1430:</b> Tiffany Gao, Ethan McDowell</li>
-                <li><i class="bi bi-record-fill"></i> <b>CSCI 1460:</b> Nikki Lu</li>
-                <li><i class="bi bi-record-fill"></i> <b>CSCI 1710:</b> Dior Williams</li>
-
-        
-                
+              <p class="mt-3 mb-1"><strong>Spring 2026 STAs</strong></p>
+              <ul class="current-stas-list">
+                <li><span class="course-tag">CSCI 0111</span> Cunyan Ma</li>
+                <li><span class="course-tag">CSCI 0200</span> Alison Zeng</li>
+                <li><span class="course-tag">CSCI 0220</span> Zach Quitkin</li>
+                <li><span class="course-tag">CSCI 0410</span> Avery Espiritu</li>
+                <li><span class="course-tag">CSCI 1430</span> Tiffany Gao, Ethan McDowell</li>
+                <li><span class="course-tag">CSCI 1460</span> Nikki Lu</li>
+                <li><span class="course-tag">CSCI 1710</span> Dior Williams</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="row gy-4" style="margin-top: 40px;">
-          <div class="col-lg-12">
-            <p style="font-weight: 600; color: var(--color-primary); margin-top: 0;">Past STAs</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Fall 2025:</b> Jasmin Kamara, Cece Bartin, Ryan Duong, Alison Zeng, Avery Espiritu, Kathy Li</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Spring 2025:</b> Alison Zeng, Sylvie Watts, Laura Romig, Akshay Mehta, Kathy Li, Christian Armstrong, Anna Hurd</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Fall 2024:</b> Joe Maffa, Alison Zeng, Daniel Cai, Laura Romig, AJ Shulman, Connor Flick, Alexis Fry, Alexander Wick, Anna Hurd</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Spring 2024:</b> Naemi Ditiatkovsky, Emma Huang, Allen Dufort, Naphat Permpredanun, Maya Fleischer, Samantha Shulman, Doren Hsiao-Wecksler, Anna Hurd, Eva Schiller</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Fall 2023:</b> Brendan Ho, Christian Armstrong, Melvin He, Raymond Dai, Faizah Naqvi, Huda Abdulrasool, Bisheshank Aryal, Serena West, Doren Hsiao-Wecksler, Fiona Liu, Anna Hurd, Anika Bahl</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Spring 2023:</b> Huda Abdulrasool, Fiona Liu, Brendan Ho, Naphat Permpredanun, Pavani Nerella, Christian Armstrong, Eva Schiller, Anna Hurd</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Fall 2022:</b> Anna Hurd, Anirudha Paul, Anika Bahl, Arun Chintalapati, Fern Tantivess, Max Karpawich, Eva Schiller, Michelle Mai, Mithi Jethwa, Aanchal Sheth, Caziah Mayers</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Spring 2022:</b> Brooke Ury, Will Guo, Brynn Chernosky, Erika Bussman, Tanya Wadhawan, Aanchal Sheth, Nick Vadasz, Ellie Madsen, Alex Horowitz, Richard Tang, Anika Bahl, Suyash Kothari</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Fall 2021:</b> Alyssa Cong, Ronald Yuan, Kevin Lu, Sheri Zhang, Erika Bussman, Anabelle Johnson, Helen Zhang, Pradyut Sekhsaria, Eva Lau, Lena Cohen</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Spring 2021:</b> Rajyashri Battula, Reet Agrawal, Shira Abramovich, Abigail Siegel, Gregory Dahl, Lena Cohen, Zeynep Aydin, Solomon Boukman, Issra Said</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Fall 2020:</b> Shira Abramovich, Suyash Kothari, Neil Sehgal, Dybe Fredy Mwaisyange, Hossam Zaki, Nick Young, Lena Cohen</p>
-              <p style="font-size: 14px; margin-bottom: 10px;"><b>Spring 2020:</b> Livia Giminez, Amanda Lee, Shira Abromovich, Karen Tu, Katie Friis, Tzion Jones, Hannah Chow, Lena Cohen, Kiran Merchant, Jessica Dai, Aaron Zhang</p>
-              <p style="font-size: 14px;"><b>Fall 2019:</b> Lena Cohen, Andy Rickert, Jessica Dai, Kendrick Tab, Signe Golash</p>
+        <!-- Past STAs -->
+        <div class="mt-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="accordion" id="pastStaAccordion">
+            <div class="accordion-item history-accordion-item">
+              <h2 class="accordion-header" id="pastStaHeading">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#pastStaCollapse" aria-expanded="false" aria-controls="pastStaCollapse">
+                  <span class="accordion-eyebrow">STA history</span>
+                  <span class="accordion-title">Past STAs</span>
+                </button>
+              </h2>
+              <div id="pastStaCollapse" class="accordion-collapse collapse" aria-labelledby="pastStaHeading" data-bs-parent="#pastStaAccordion">
+                <div class="accordion-body">
+                  <div class="past-sta-list">
+                    <p><b>Fall 2025:</b> Jasmine Kamara, Cece Bartin, Daniel Schiffman, Ryan Duong, Alison Zeng, Anant Saraf, Avery Espiritu, Sarah Liao</p>
+                    <p><b>Spring 2025:</b> Alison Zeng, Kawehi Kelii, Laura Romig, Akshay Mehta, Daniel Schiffman, Kathy Li, Sana Saab, Christian Armstrong, Sylvie Watts, Mikayla Walsh</p>
+                    <p><b>Fall 2024:</b> Joe Maffa, Kawehi Kelii, AJ Shulman, Sarah Roberts, Connor Flick, Alexis Fry, Rachel Brooks, Alexander Wick, Berny Li, Daniel Cai, Mikayla Walsh, Laura Romig, Nick Masi</p>
+                    <p><b>Spring 2024:</b> Naemi Ditiatkovsky, Kawehi Kelii, Samantha Shulman, Grant Landon, Doren Hsiao-Wecksler, Alexander Wick, Anna Hurd, Gabi Becher, Emma Huang, Julie Qian, Allen Dufort, Connor Flick, Naphat Permpredanun, Sameer Sinha, Kyle Yeh, Lingze Zhang, Maya Fleischer, Valentina Lin </p>
+                    <p><b>Fall 2023:</b> Brendan Ho, Michelle Ding, Christian Armstrong, Jo Gasior-Kavishe, Faizah Naqvi, Katie Li, Adam Mroueh, Huda Abdulrasool, Doren Hsiao-Wecksler, Fiona Liu, Falak Pabari, Anna Hurd, Afia Akosah-Bempah, Gabi Becher, Melvin He, Raymond Dai, Nick Masi, Bisheshank Aryal, Serena West</p>
+                    <p><b>Spring 2023:</b> Huda Abdulrasool, Tabitha Lynn, Lachlan Kermode, Christian Armstrong, Carmen Yu, Eva Schiller, Anna Hurd, Caziah Mayers , Fiona Liu, Melvin He, Brendan Ho, Faizaan Vidhani, Naphat Permpredanun, Pavani Nerella</p>
+                    <p><b>Fall 2022:</b> Anna Hurd, Fern Tantivess, Nadya Tan, Lachlan Kermode, Eva Schiller, Mithi Jethwa, Aanchal Sheth, Julia McCauley, Caziah Mayers, Galen Winsor, Anirudha Paul, Anika Bahl, Justin Zhu, Arun Chintalapati, Kunal Handa, Max Karpawich, Lachlan Kermode, Michelle Mai, Lizzy Zhang</p>
+                    <p><b>Spring 2022:</b> Brooke Ury, Lily Ward-Diorio, Ellie Madsen, Julia McCauley, Alex Horowitz, Charles Somerville, Richard Tang, Anika Bahl, Galen Winsor , Will Guo, Kevin Lu, Brynn Chernosky, Diego Rodriguez, Erika Bussman, Kunal Handa , Tanya Wadhawan, Swetabh Changkakoti, Aanchal Sheth, Joanna Tasmin, Nick Vadasz</p>
+                    <p><b>Fall 2021:</b> Alyssa Cong, Mohammed Akel, Ronald Yuan, Anabelle Johnson, Lucas Gelfond, Pradyut Sekhsaria, Eva Lau, Anika Bahl, Kevin Lu, Sheri Zhang, Erika Bussman, Amanda Lee, Helen Zhang</p>
+                    <p><b>Spring 2021:</b> Shira Abramovich, Ellie Madsen, Gregory Dahl, Suyash Kothari, Zeynep Aydin, Jenny Tan, Solomon Boukman, Nick Young, Rajyashri Battula, Dat-Thanh Nguyen, Reet Agrawal, Nick Sehgal, Abigail Siegel, Willem Speckmann, Lena Cohen, Gaurav Sharma, Issra Said</p>
+                    <p><b>Fall 2020:</b> Shira Abramovich, Suyash Kothari, Nick Young, Neil Sehgal, Amrita Sridhar, Dybe Fredy Mwaisyange, Naomi Lee, Hossam Zaki</p>
+                    <p><b>Spring 2020:</b>Livia Giminez, Tzuhwan Seet, Amanda Lee, Eli Morimoto, Tzion Jones, Jessy Ma, Lena Cohen, Shenandoah Duraideivamani, Kiran Merchant, Heila Precel, Shira Abromovich, Jamison Wells, Karen Tu, Kelvin Yang, Katie Friis, Isabella Ting, Hannah Chow, Shawna Huang, Aaron Zhang</p>
+                    <p><b>Fall 2019:</b> Lena Cohen, Tzuhwan Seet, Rebecca Zuo, Heila Precel, Andy Rickert, Jessica Dai, Kendrick Tan, Signe Golash, Stanley Yip, Hal Triedman</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
-  </div>
-</section><!-- End STAs Section -->  
-
+    </section><!-- End STAs Section -->
 
   </main><!-- End #main -->
 
-      <div id="site-footer"></div>
-  
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
-    <div id="preloader"></div>
-  
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-  
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  
-  </body>
-  
-  </html>
+  <div id="site-footer"></div>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

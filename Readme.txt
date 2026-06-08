@@ -10,3 +10,7 @@ FOR FUTURE HSTAs:
 Each year, update the `People` page, the numbers on the homepage, ...
 
 The code for the modular components (header, sidebar, and footer) are in main.js.
+
+kathy to-dos:
+- edit main bar to show when you are currently on a website section
+- check color contrast

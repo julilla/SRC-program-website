@@ -54,184 +54,655 @@
 
     <section class="sample-page">
       <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <p><span>Purpose of the Curriculum</span></p>
-        </div>
-        <p>
-          The Integrated Curriculum for Socially Responsible Computing provides a comprehensive framework for teaching responsible computing throughout the computer science curriculum at Brown. This curriculum is designed to:
-        </p>
-        <ul>
-          <li>Help courses determine what to teach in terms of socially responsible computing</li>
-          <li>Reduce duplication of SRC content across courses</li>
-          <li>Establish the SRC-related skills that a Brown CS graduate should have</li>
-          <li>Allow courses to build on SRC topics across courses and deepen the quality of content</li>
-        </ul>
-
-        <div class="section-header">
-          <p><span>Learning Objectives: Five Levels of Skills</span></p>
-        </div>
-        <p>
-          The curriculum uses five distinct levels of learning objectives to scaffold student understanding and skill development:
-        </p>
-
-        <div class="accordion accordion-flush" id="accordionSkills">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSkill1">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill1" aria-expanded="false" aria-controls="collapseSkill1">
-                <strong>1. Be aware of</strong>
-              </button>
-            </h2>
-            <div id="collapseSkill1" class="accordion-collapse collapse" aria-labelledby="headingSkill1" data-bs-parent="#accordionSkills">
-              <div class="accordion-body">
-                Students have heard of a concept/idea and how it relates to a given technical context. Students are able to recall the concept/idea as relevant in a specific context. ("I know X is a thing.")
-              </div>
-            </div>
+        <div class="curriculum-overview">
+          <div class="curriculum-overview-header">
+            <h3>Purpose of the Curriculum</h3>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSkill2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill2" aria-expanded="false" aria-controls="collapseSkill2">
-                <strong>2. Understand</strong>
-              </button>
-            </h2>
-            <div id="collapseSkill2" class="accordion-collapse collapse" aria-labelledby="headingSkill2" data-bs-parent="#accordionSkills">
-              <div class="accordion-body">
-                Students can explain the meaning and/or significance of a specific concept/idea. They can articulate how it functions and/or why it is important.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSkill3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill3" aria-expanded="false" aria-controls="collapseSkill3">
-                <strong>3. Identify</strong>
-              </button>
-            </h2>
-            <div id="collapseSkill3" class="accordion-collapse collapse" aria-labelledby="headingSkill3" data-bs-parent="#accordionSkills">
-              <div class="accordion-body">
-                Students are able to recognize relevant concerns in a specific technical context without prompting and are able to articulate how they would affect relevant technical decisions.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSkill4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill4" aria-expanded="false" aria-controls="collapseSkill4">
-                <strong>4. Analyze</strong>
-              </button>
-            </h2>
-            <div id="collapseSkill4" class="accordion-collapse collapse" aria-labelledby="headingSkill4" data-bs-parent="#accordionSkills">
-              <div class="accordion-body">
-                Students are able to critically evaluate a specific concept/idea, either abstractly or in a specific social or technical context. They are able to cite and engage with different concerns and/or conflicting perspectives on the topic in question.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSkill5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill5" aria-expanded="false" aria-controls="collapseSkill5">
-                <strong>5. Implement</strong>
-              </button>
-            </h2>
-            <div id="collapseSkill5" class="accordion-collapse collapse" aria-labelledby="headingSkill5" data-bs-parent="#accordionSkills">
-              <div class="accordion-body">
-                Students are able to execute concrete technical decisions or use specific techniques to achieve a desired objective.
-              </div>
-            </div>
+          <div class="curriculum-purpose-card">
+            <p>
+              The Integrated Curriculum for Socially Responsible Computing provides a comprehensive framework for teaching responsible computing throughout the computer science curriculum at Brown. This curriculum is designed to:
+            </p>
+            <ul>
+              <li>Help courses determine what to teach in terms of socially responsible computing</li>
+              <li>Reduce duplication of SRC content across courses</li>
+              <li>Establish the SRC-related skills that a Brown CS graduate should have</li>
+              <li>Allow courses to build on SRC topics across courses and deepen the quality of content</li>
+            </ul>
           </div>
         </div>
 
-        <div class="section-header" style="margin-top: 40px;">
-          <p><span>Five Major Topical Areas</span></p>
-        </div>
-        <p>
-          The curriculum is organized around five major topical areas that reflect key domains where computing intersects with society and ethics:
-        </p>
+        <section class="curriculum-skills" aria-labelledby="curriculum-skills-heading">
+          <div class="curriculum-overview-header">
+            <h3 id="curriculum-skills-heading">Five Levels of Skills</h3>
+            <p>The curriculum uses five distinct levels of learning objectives to scaffold student understanding and skill development:</p>
+          </div>
 
-        <div class="accordion accordion-flush" id="accordionTopics">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTopic1">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTopic1" aria-expanded="false" aria-controls="collapseTopic1">
-                <strong>I. Data Science and Artificial Intelligence</strong>
-              </button>
-            </h2>
-            <div id="collapseTopic1" class="accordion-collapse collapse" aria-labelledby="headingTopic1" data-bs-parent="#accordionTopics">
-              <div class="accordion-body">
-                <p><strong>a. Modeling and Analysis:</strong> Understanding how data representation is reductive and incomplete, and how developer perspective shapes data and variable choices.</p>
-                
-                <p><strong>b. Automated Decision-Making:</strong> Addressing sources of bias in algorithmic and AI systems, fairness metrics, bias mitigation, justice, context-specific limitations, interpretability, and AI governance.</p>
-                
-                <p><strong>c. Generative AI:</strong> Understanding mechanisms of harm in generative AI, strategies to mitigate harms, effects on likeness and public perception, copyright and IP issues, and future of work implications.</p>
+          <div class="accordion curriculum-skills-accordion" id="accordionSkills">
+            <div class="accordion-item history-accordion-item">
+              <h2 class="accordion-header" id="headingSkill1">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill1" aria-expanded="false" aria-controls="collapseSkill1">
+                  <span class="accordion-eyebrow">Skill level 1</span>
+                  <span class="accordion-title">Be aware of</span>
+                </button>
+              </h2>
+              <div id="collapseSkill1" class="accordion-collapse collapse" aria-labelledby="headingSkill1" data-bs-parent="#accordionSkills">
+                <div class="accordion-body">
+                  Students have heard of a concept/idea and how it relates to a given technical context. Students are able to recall the concept/idea as relevant in a specific context. ("I know X is a thing.")
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item">
+              <h2 class="accordion-header" id="headingSkill2">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill2" aria-expanded="false" aria-controls="collapseSkill2">
+                  <span class="accordion-eyebrow">Skill level 2</span>
+                  <span class="accordion-title">Understand</span>
+                </button>
+              </h2>
+              <div id="collapseSkill2" class="accordion-collapse collapse" aria-labelledby="headingSkill2" data-bs-parent="#accordionSkills">
+                <div class="accordion-body">
+                  Students can explain the meaning and/or significance of a specific concept/idea. They can articulate how it functions and/or why it is important.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item">
+              <h2 class="accordion-header" id="headingSkill3">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill3" aria-expanded="false" aria-controls="collapseSkill3">
+                  <span class="accordion-eyebrow">Skill level 3</span>
+                  <span class="accordion-title">Identify</span>
+                </button>
+              </h2>
+              <div id="collapseSkill3" class="accordion-collapse collapse" aria-labelledby="headingSkill3" data-bs-parent="#accordionSkills">
+                <div class="accordion-body">
+                  Students are able to recognize relevant concerns in a specific technical context without prompting and are able to articulate how they would affect relevant technical decisions.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item">
+              <h2 class="accordion-header" id="headingSkill4">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill4" aria-expanded="false" aria-controls="collapseSkill4">
+                  <span class="accordion-eyebrow">Skill level 4</span>
+                  <span class="accordion-title">Analyze</span>
+                </button>
+              </h2>
+              <div id="collapseSkill4" class="accordion-collapse collapse" aria-labelledby="headingSkill4" data-bs-parent="#accordionSkills">
+                <div class="accordion-body">
+                  Students are able to critically evaluate a specific concept/idea, either abstractly or in a specific social or technical context. They are able to cite and engage with different concerns and/or conflicting perspectives on the topic in question.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item">
+              <h2 class="accordion-header" id="headingSkill5">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill5" aria-expanded="false" aria-controls="collapseSkill5">
+                  <span class="accordion-eyebrow">Skill level 5</span>
+                  <span class="accordion-title">Implement</span>
+                </button>
+              </h2>
+              <div id="collapseSkill5" class="accordion-collapse collapse" aria-labelledby="headingSkill5" data-bs-parent="#accordionSkills">
+                <div class="accordion-body">
+                  Students are able to execute concrete technical decisions or use specific techniques to achieve a desired objective.
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTopic2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTopic2" aria-expanded="false" aria-controls="collapseTopic2">
-                <strong>II. Data Collection, Protection, and Privacy</strong>
-              </button>
-            </h2>
-            <div id="collapseTopic2" class="accordion-collapse collapse" aria-labelledby="headingTopic2" data-bs-parent="#accordionTopics">
-              <div class="accordion-body">
-                <p>Students explore the extent and implications of data collection, different collection mechanisms (overt, covert, shared), data sensitivity and re-identification risks, privacy functions and values, regulations (CCPA, GDPR), surveillance, consent, and privacy-preserving technologies. Topics include understanding tradeoffs between privacy and other values such as transparency, accountability, safety, and security.</p>
+        <section class="curriculum-detail" aria-labelledby="full-curriculum-heading">
+          <div class="curriculum-detail-header">
+            <h3 id="full-curriculum-heading">Objective Standards and Course Locations</h3>
+            <p>The full curriculum organizes SRC learning objectives by topical area, content standard, and suggested course location.</p>
+          </div>
+<div class="accordion curriculum-accordion" id="fullCurriculumAccordion">
+            <div class="accordion-item history-accordion-item curriculum-area">
+              <h2 class="accordion-header" id="headingCurriculumArea1">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCurriculumArea1" aria-expanded="false" aria-controls="collapseCurriculumArea1">
+                  <span class="accordion-eyebrow">Topic area I</span>
+                  <span class="accordion-title">Data Science and Artificial Intelligence</span>
+                </button>
+              </h2>
+              <div id="collapseCurriculumArea1" class="accordion-collapse collapse" aria-labelledby="headingCurriculumArea1" data-bs-parent="#fullCurriculumAccordion">
+                <div class="accordion-body">
+                  <div class="accordion curriculum-subaccordion" id="curriculumSubaccordion1">
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea1Subarea1">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea1Subarea1" aria-expanded="false" aria-controls="collapseArea1Subarea1">
+                        a. Modeling and Analysis
+                      </button>
+                    </h3>
+                    <div id="collapseArea1Subarea1" class="accordion-collapse collapse" aria-labelledby="headingArea1Subarea1" data-bs-parent="#curriculumSubaccordion1">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.a.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> that representing aspects of the world through data is necessarily reductive and incomplete. Developer perspective shapes the choice and design of variables</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.a.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Identify</strong> variables in datasets that emphasize a particular perspective and the possible impacts of redesigning those datasets</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses; AI courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea1Subarea2">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea1Subarea2" aria-expanded="false" aria-controls="collapseArea1Subarea2">
+                        b. Automated Decision-Making
+                      </button>
+                    </h3>
+                    <div id="collapseArea1Subarea2" class="accordion-collapse collapse" aria-labelledby="headingArea1Subarea2" data-bs-parent="#curriculumSubaccordion1">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.b.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> different sources of bias in algorithmic and AI systems (societal vs. dataset vs. system parameters) and their interactions</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.b.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> and <strong>Understand</strong> metrics to mathematically interpret fairness</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course (Be aware of); Upper-level AI courses (Understand)</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.b.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be Aware of</strong> approaches for bias mitigation</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.b.4</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be Aware of</strong> and <strong>Understand</strong> different concepts of justice as they relate to automated decision-making systems</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course (Be Aware of); Upper-level AI courses (Understand)</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.b.5</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> context-specific limitations of automated decision-making and <strong>Analyze</strong> when the use of such systems is appropriate and when human decision-making is preferable or required</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course; Upper-level AI courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.b.6</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> and <strong>Analyze</strong> different standards for interpreting algorithmic and AI decisions: e.g., transparency, explainability</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course (Understand); Upper-level AI courses (Analyze)</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.b.7</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> different methods and strategies for AI governance</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course; Upper-level AI courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea1Subarea3">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea1Subarea3" aria-expanded="false" aria-controls="collapseArea1Subarea3">
+                        c. Generative AI
+                      </button>
+                    </h3>
+                    <div id="collapseArea1Subarea3" class="accordion-collapse collapse" aria-labelledby="headingArea1Subarea3" data-bs-parent="#curriculumSubaccordion1">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.c.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the distinct mechanisms by which AI systems can produce harm; <strong>Understand</strong> how the unpredictability of generative AI systems and the contexts in which they are deployed means that they cannot, at present, be designed to reliably avoid harmful outcomes</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.c.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> strategies to identify, evaluate, and mitigate harms stemming from unpredictability in AI systems</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level AI courses; Socio-technical courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.c.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> the effects of widespread use of synthetic content on one's ability to control their likeness and public perception</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level AI courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.c.4</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> the legal frameworks governing copyright and intellectual property as they relate to generative AI; <strong>Be aware of</strong> questions regarding the copyrightability of AI-generated outputs; <strong>Be aware of</strong> questions regarding the legality of training models on copyrighted data</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level AI courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">I.c.5</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> opportunities and risks of generative AI in future of work (e.g., deskilling, lack of connectivity).</div>
+                            <div class="objective-location" data-label="Suggested course location">AI foundations course; Upper-level AI courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item curriculum-area">
+              <h2 class="accordion-header" id="headingCurriculumArea2">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCurriculumArea2" aria-expanded="false" aria-controls="collapseCurriculumArea2">
+                  <span class="accordion-eyebrow">Topic area II</span>
+                  <span class="accordion-title">Data Collection, Protection, and Privacy</span>
+                </button>
+              </h2>
+              <div id="collapseCurriculumArea2" class="accordion-collapse collapse" aria-labelledby="headingCurriculumArea2" data-bs-parent="#fullCurriculumAccordion">
+                <div class="accordion-body">
+                  <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> the extent of data collection and reliance of technologies on large volumes of personal data; <strong>Understand</strong> the concept of surveillance capitalism and alternative economic models</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> and <strong>Identify</strong> different mechanisms of data collection-overt, covert, and from other sources (i.e., via sharing)-and their implications on privacy</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the limitations of the distinction between sensitive and non-sensitive data, especially considering the potential for re-identification</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.4</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the value and functions of privacy (including how both short-term and long-term privacy risks may threaten those)</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.5</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> (and <strong>Implement</strong>) key aspects of major privacy regulations, standards, etc. (e.g., CCPA, GDPR, ...)</div>
+                            <div class="objective-location" data-label="Suggested course location">Systems foundation course</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.6</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> trade-offs between privacy and other values, such as transparency, accountability, safety, or security</div>
+                            <div class="objective-location" data-label="Suggested course location">Systems courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.7</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> surveillance and <strong>Identify</strong> instances of data collection that enable surveillance</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses; Upper-level systems courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.8</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> different conceptions of consent, and its potential and limitations as an instrument for data protection</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">II.9</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> widely-used privacy-preserving/enhancing technologies (e.g., encryption, differential privacy); <strong>Understand</strong> their limitations; <strong>Analyze</strong> prominent controversies surrounding them</div>
+                            <div class="objective-location" data-label="Suggested course location">Software Engineering courses; Upper-level courses</div>
+                          </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item curriculum-area">
+              <h2 class="accordion-header" id="headingCurriculumArea3">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCurriculumArea3" aria-expanded="false" aria-controls="collapseCurriculumArea3">
+                  <span class="accordion-eyebrow">Topic area III</span>
+                  <span class="accordion-title">Design and User Experience</span>
+                </button>
+              </h2>
+              <div id="collapseCurriculumArea3" class="accordion-collapse collapse" aria-labelledby="headingCurriculumArea3" data-bs-parent="#fullCurriculumAccordion">
+                <div class="accordion-body">
+                  <div class="accordion curriculum-subaccordion" id="curriculumSubaccordion3">
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea3Subarea1">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea3Subarea1" aria-expanded="false" aria-controls="collapseArea3Subarea1">
+                        a. Responsible Design
+                      </button>
+                    </h3>
+                    <div id="collapseArea3Subarea1" class="accordion-collapse collapse" aria-labelledby="headingArea3Subarea1" data-bs-parent="#curriculumSubaccordion3">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.a.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> (and <strong>Implement</strong>) different design processes for evaluating the needs of diverse users and <strong>Analyze</strong> their appropriateness in various contexts</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.a.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> and <strong>Identify</strong> how different biases can influence one's judgment and shape design decisions</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea3Subarea2">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea3Subarea2" aria-expanded="false" aria-controls="collapseArea3Subarea2">
+                        b. Accessibility
+                      </button>
+                    </h3>
+                    <div id="collapseArea3Subarea2" class="accordion-collapse collapse" aria-labelledby="headingArea3Subarea2" data-bs-parent="#curriculumSubaccordion3">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.b.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> varying definitions and conceptions of accessibility</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.b.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Identify</strong> opportunities to apply and <strong>Implement</strong> standards and best practices for accessibility</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses; Software Engineering courses; HCI courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.b.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Identify</strong> and <strong>Analyze</strong> intersections between accessibility and other values such as privacy, security, or sustainability</div>
+                            <div class="objective-location" data-label="Suggested course location">Software Engineering courses; HCI courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea3Subarea3">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea3Subarea3" aria-expanded="false" aria-controls="collapseArea3Subarea3">
+                        c. Technology and the Self
+                      </button>
+                    </h3>
+                    <div id="collapseArea3Subarea3" class="accordion-collapse collapse" aria-labelledby="headingArea3Subarea3" data-bs-parent="#curriculumSubaccordion3">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.c.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> how technology is used to direct users' attention and shape their interests, preferences, and desires</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.c.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> how psychological mechanisms and cognitive biases can be exploited by technical means to direct user attention and behavior (e.g., nudging via deceptive patterns)</div>
+                            <div class="objective-location" data-label="Suggested course location">HCI courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.c.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> the value of attention and the consequences of yielding control over it</div>
+                            <div class="objective-location" data-label="Suggested course location">Socio-technical courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.c.4</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> the effect of technologies on our self-perception and relationship with ourselves</div>
+                            <div class="objective-location" data-label="Suggested course location">Socio-technical courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">III.c.5</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> the effect of technologies on the nature and quality of interpersonal relationships</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item curriculum-area">
+              <h2 class="accordion-header" id="headingCurriculumArea4">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCurriculumArea4" aria-expanded="false" aria-controls="collapseCurriculumArea4">
+                  <span class="accordion-eyebrow">Topic area IV</span>
+                  <span class="accordion-title">Technology in Context</span>
+                </button>
+              </h2>
+              <div id="collapseCurriculumArea4" class="accordion-collapse collapse" aria-labelledby="headingCurriculumArea4" data-bs-parent="#fullCurriculumAccordion">
+                <div class="accordion-body">
+                  <div class="accordion curriculum-subaccordion" id="curriculumSubaccordion4">
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea4Subarea1">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea4Subarea1" aria-expanded="false" aria-controls="collapseArea4Subarea1">
+                        a. Sustainability
+                      </button>
+                    </h3>
+                    <div id="collapseArea4Subarea1" class="accordion-collapse collapse" aria-labelledby="headingArea4Subarea1" data-bs-parent="#curriculumSubaccordion4">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.a.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> and <strong>Identify</strong> potential environmental impacts of a specific technology: Natural resource consumption; Energy consumption; E-waste production; Pollution</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses (Natural resource consumption, pollution); Hardware-focused courses (computer architecture, embedded systems) (e-waste production); AI courses (energy consumption)</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.a.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> how the environmental impacts of technology have disproportionate socioeconomic effects on different populations</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.a.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the need for infrastructural sustainability and the means and challenges of ensuring hardware and software maintenance and preservation</div>
+                            <div class="objective-location" data-label="Suggested course location">Systems foundation course</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.a.4</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the need for and challenges of ensuring data sustainability</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea4Subarea2">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea4Subarea2" aria-expanded="false" aria-controls="collapseArea4Subarea2">
+                        b. Technology and Labor
+                      </button>
+                    </h3>
+                    <div id="collapseArea4Subarea2" class="accordion-collapse collapse" aria-labelledby="headingArea4Subarea2" data-bs-parent="#curriculumSubaccordion4">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.b.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Identify</strong> skills and roles that advancements in specific technologies (e.g., automation, generative AI) are likely to displace, create, or evolve, and <strong>Analyze</strong> the (socio-)economic implications of these changes</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses; Software Engineering courses; AI courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.b.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> the human labor involved in and the physical and psychological effects of: Training AI models (including data labeling and curation); Surveillance; Content moderation; Hardware fabrication and resource collection; Data generation</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses; Hardware-focused courses (computer architecture, embedded systems); Upper-level AI courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea4Subarea3">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea4Subarea3" aria-expanded="false" aria-controls="collapseArea4Subarea3">
+                        c. The Internet and Public Discourse
+                      </button>
+                    </h3>
+                    <div id="collapseArea4Subarea3" class="accordion-collapse collapse" aria-labelledby="headingArea4Subarea3" data-bs-parent="#curriculumSubaccordion4">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.c.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the effect of content moderation on social pluralism; <strong>Analyze</strong> the tensions between free expression of ideas and user safety/comfort in online spaces</div>
+                            <div class="objective-location" data-label="Suggested course location">Computer Networks courses; Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.c.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the effects of algorithmic/AI-based curation of information on public discourse (e.g., filter bubbles, echo chambers)</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.c.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the role of specific technologies (e.g., social media, generative AI) in spreading misinformation or disinformation; <strong>Be aware of</strong> the effect of specific technologies on erosion of trust in individuals, institutions, and providers of information</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses (Understand); Upper-level AI courses (Be aware of)</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.c.4</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> the potential and limitations of technical and non-technical mitigation approaches to curb the spread of mis-/disinformation</div>
+                            <div class="objective-location" data-label="Suggested course location">Socio-technical courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.c.5</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> how technical infrastructure and regulation of that infrastructure shapes the ways in which we communicate and consume information</div>
+                            <div class="objective-location" data-label="Suggested course location">Computer Networks courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.c.6</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> how easy access to recording devices and social networks for distribution creates transparency and enables individuals and social movements to hold institutions and other powerful actors accountable (i.e., sousveillance)</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses; Socio-technical courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item curriculum-subaccordion-item">
+                    <h3 class="accordion-header" id="headingArea4Subarea4">
+                      <button class="accordion-button collapsed curriculum-subaccordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArea4Subarea4" aria-expanded="false" aria-controls="collapseArea4Subarea4">
+                        d. Technology, History, and International Relations
+                      </button>
+                    </h3>
+                    <div id="collapseArea4Subarea4" class="accordion-collapse collapse" aria-labelledby="headingArea4Subarea4" data-bs-parent="#curriculumSubaccordion4">
+                      <div class="accordion-body">
+                        <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.d.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> how global power structures shape technological development and how technological development, in turn, reshapes global power structures</div>
+                            <div class="objective-location" data-label="Suggested course location">Software Engineering courses; AI foundations course</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.d.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> the long-term history of technological development and <strong>Analyze</strong> the impact of current changes in light of that history</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses; AI-courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">IV.d.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> the impact of technology on military capabilities and conflict</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses; Security and Math Courses</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item history-accordion-item curriculum-area">
+              <h2 class="accordion-header" id="headingCurriculumArea5">
+                <button class="accordion-button collapsed history-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCurriculumArea5" aria-expanded="false" aria-controls="collapseCurriculumArea5">
+                  <span class="accordion-eyebrow">Topic area V</span>
+                  <span class="accordion-title">Stakeholder Engagement</span>
+                </button>
+              </h2>
+              <div id="collapseCurriculumArea5" class="accordion-collapse collapse" aria-labelledby="headingCurriculumArea5" data-bs-parent="#fullCurriculumAccordion">
+                <div class="accordion-body">
+                  <div class="objective-list">
+                          <div class="objective-header" aria-hidden="true">
+                            <span>Objective identifier</span>
+                            <span>Content standard</span>
+                            <span>Suggested course location</span>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.1</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> the concept of a stakeholder and <strong>Identify</strong> various stakeholders in a given project</div>
+                            <div class="objective-location" data-label="Suggested course location">Introductory courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.2</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Identify</strong> and <strong>Implement</strong> stakeholder needs</div>
+                            <div class="objective-location" data-label="Suggested course location">Intermediate-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.3</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> how different stakeholders' needs may conflict, and potential resolution strategies</div>
+                            <div class="objective-location" data-label="Suggested course location">Intermediate- and upper-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.4</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Understand</strong> how to communicate technical content to non-technical stakeholders</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.5</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> the alignment of a project with stakeholders' intended goals; <strong>Analyze</strong> conflicting positions on the extent to which stakeholder requests should be implemented in cases where stakeholder requests may diverge from what might benefit them (i.e., paternalism versus libertarianism)</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.6</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Identify</strong> and <strong>Analyze</strong> techno-solutionist attitudes and approaches</div>
+                            <div class="objective-location" data-label="Suggested course location">Intermediate-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.7</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Analyze</strong> the potential negative impacts (e.g., unintended consequences, externalities) of technologies that are ostensibly designed for social benefit</div>
+                            <div class="objective-location" data-label="Suggested course location">Upper-level courses</div>
+                          </div>
+                          <div class="objective-row">
+                            <div class="objective-id" data-label="Objective identifier">V.8</div>
+                            <div class="objective-standard" data-label="Content standard"><strong>Be aware of</strong> responsible disclosure; <strong>Be aware of</strong> the existence of mechanisms for reporting technological vulnerabilities to responsible organizations; <strong>Analyze</strong> possible impacts of releasing security vulnerabilities publicly</div>
+                            <div class="objective-location" data-label="Suggested course location">Security courses</div>
+                          </div>
+                        </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTopic3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTopic3" aria-expanded="false" aria-controls="collapseTopic3">
-                <strong>III. Design and User Experience</strong>
-              </button>
-            </h2>
-            <div id="collapseTopic3" class="accordion-collapse collapse" aria-labelledby="headingTopic3" data-bs-parent="#accordionTopics">
-              <div class="accordion-body">
-                <p><strong>a. Responsible Design:</strong> Design processes for evaluating diverse user needs and understanding how biases influence design decisions.</p>
-                
-                <p><strong>b. Accessibility:</strong> Varying definitions of accessibility, standards and best practices, and intersections between accessibility and other values such as privacy, security, and sustainability.</p>
-                
-                <p><strong>c. Technology and the Self:</strong> How technology directs attention, shapes interests and desires through psychological mechanisms and cognitive biases, effects on self-perception and interpersonal relationships, and the value of attention.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTopic4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTopic4" aria-expanded="false" aria-controls="collapseTopic4">
-                <strong>IV. Technology in Context</strong>
-              </button>
-            </h2>
-            <div id="collapseTopic4" class="accordion-collapse collapse" aria-labelledby="headingTopic4" data-bs-parent="#accordionTopics">
-              <div class="accordion-body">
-                <p><strong>a. Sustainability:</strong> Environmental impacts (resource consumption, energy, e-waste, pollution), disproportionate socioeconomic effects, infrastructure sustainability, and data sustainability.</p>
-                
-                <p><strong>b. Technology and Labor:</strong> Skills and roles displaced, created, or evolved by technological advancement; human labor involved in AI training, surveillance, content moderation, and hardware fabrication.</p>
-                
-                <p><strong>c. The Internet and Public Discourse:</strong> Content moderation and social pluralism, tensions between free expression and user safety, algorithmic curation effects, misinformation and disinformation, transparency and sousveillance, and technical infrastructure.</p>
-                
-                <p><strong>d. Technology, History, and International Relations:</strong> Global power structures and technological development, long-term history of technology, and technology's impact on military capabilities and conflict.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTopic5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTopic5" aria-expanded="false" aria-controls="collapseTopic5">
-                <strong>V. Stakeholder Engagement</strong>
-              </button>
-            </h2>
-            <div id="collapseTopic5" class="accordion-collapse collapse" aria-labelledby="headingTopic5" data-bs-parent="#accordionTopics">
-              <div class="accordion-body">
-                <p>Students learn to understand the concept of stakeholders, identify various stakeholders in projects, understand and implement stakeholder needs, analyze competing needs and resolution strategies, communicate with non-technical stakeholders, align projects with stakeholder goals, identify techno-solutionist attitudes, analyze potential negative impacts and unintended consequences, and understand responsible disclosure.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p style="margin-top: 40px; font-style: italic;">
-          Each topical area contains specific learning objectives with suggested course locations. For detailed learning objectives and course placement recommendations, please consult the full curriculum documentation.
-        </p>
+        </section>
 
       </div>
     </section>

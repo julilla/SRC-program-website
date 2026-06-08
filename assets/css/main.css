@@ -2285,3 +2285,455 @@ section {
 }
 
 
+
+.curriculum-overview,
+.curriculum-skills {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.curriculum-skills {
+  margin-top: 48px;
+}
+
+.curriculum-overview-header {
+  max-width: 760px;
+  margin: 0 auto 22px auto;
+  text-align: center;
+}
+
+.curriculum-overview-header .eyebrow {
+  margin: 0 0 8px 0;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.curriculum-overview-header h3 {
+  margin: 0;
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.curriculum-overview-header p {
+  max-width: 620px;
+  margin: 12px auto 0 auto;
+  color: #5f6268;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.curriculum-purpose-card {
+  padding: 26px 30px;
+  background: #fff;
+  border: 1px solid rgba(55, 55, 63, 0.1);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 6px;
+  box-shadow: 0 10px 26px rgba(55, 55, 63, 0.06);
+}
+
+.curriculum-purpose-card p {
+  margin: 0 0 16px 0;
+  color: #4f5359;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.curriculum-purpose-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #4f5359;
+}
+
+.curriculum-purpose-card li + li {
+  margin-top: 8px;
+}
+
+.curriculum-skills-accordion {
+  display: grid;
+  gap: 14px;
+}
+
+/*--------------------------------------------------------------
+# Curriculum Detail
+--------------------------------------------------------------*/
+.curriculum-detail {
+  margin-top: 56px;
+  padding-top: 46px;
+  border-top: 1px solid rgba(55, 55, 63, 0.1);
+}
+
+.curriculum-detail-header {
+  max-width: 780px;
+  margin: 0 auto 26px auto;
+  text-align: center;
+}
+
+.curriculum-detail-header .eyebrow {
+  margin: 0 0 8px 0;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.curriculum-detail-header h3 {
+  margin: 0;
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.curriculum-detail-header p {
+  max-width: 620px;
+  margin: 12px auto 0 auto;
+  color: #5f6268;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.curriculum-accordion {
+  display: grid;
+  gap: 18px;
+}
+
+.curriculum-area {
+  margin: 0;
+}
+
+.curriculum-subaccordion {
+  display: grid;
+  gap: 12px;
+}
+
+.curriculum-subaccordion-item {
+  border: 1px solid rgba(55, 55, 63, 0.1) !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+  background: #fff;
+}
+
+.curriculum-subaccordion-btn {
+  padding: 18px 20px !important;
+  background: #fafafa !important;
+  color: var(--color-secondary) !important;
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: none !important;
+}
+
+.curriculum-subaccordion-btn::first-letter {
+  color: var(--color-primary);
+}
+
+.curriculum-subaccordion-btn:not(.collapsed) {
+  background: #fff !important;
+  border-bottom: 1px solid rgba(55, 55, 63, 0.08);
+}
+
+.curriculum-subaccordion-item .accordion-body {
+  padding: 18px;
+}
+
+.objective-list {
+  display: grid;
+  border: 1px solid rgba(55, 55, 63, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.objective-header,
+.objective-row {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1.65fr) minmax(240px, 0.9fr);
+  gap: 0;
+}
+
+.objective-header {
+  color: #45484d;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(55, 55, 63, 0.14);
+}
+
+.objective-header span {
+  padding: 13px 16px;
+}
+
+.objective-header span:nth-child(1),
+.objective-row .objective-id {
+  background: #f7f5f3;
+}
+
+.objective-header span:nth-child(2),
+.objective-row .objective-standard {
+  background: #fff;
+}
+
+.objective-header span:nth-child(3),
+.objective-row .objective-location {
+  background: #f5f6f7;
+}
+
+.objective-row:nth-child(even) .objective-id {
+  background: #f2f0ee;
+}
+
+.objective-row:nth-child(even) .objective-standard {
+  background: #fbfbfb;
+}
+
+.objective-row:nth-child(even) .objective-location {
+  background: #eef0f2;
+}
+
+.objective-header span + span,
+.objective-row > div + div {
+  border-left: 1px solid rgba(55, 55, 63, 0.1);
+}
+
+.objective-row {
+  align-items: stretch;
+  border-top: 1px solid rgba(55, 55, 63, 0.08);
+}
+
+.objective-header + .objective-row {
+  border-top: 0;
+}
+
+.objective-row > div {
+  padding: 16px;
+}
+
+.objective-id {
+  color: #5c4a40;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.objective-standard,
+.objective-location {
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+.objective-standard {
+  color: #30343a;
+}
+
+.objective-location {
+  color: #4f5359;
+  font-family: var(--font-primary);
+  font-size: 13.5px;
+  font-weight: 650;
+}
+
+@media (max-width: 991px) {
+  .objective-header {
+    display: none;
+  }
+
+  .objective-row {
+    grid-template-columns: 1fr;
+  }
+
+  .objective-row > div {
+    padding: 13px 16px;
+  }
+
+  .objective-row > div + div {
+    border-left: 0;
+    border-top: 1px solid rgba(55, 55, 63, 0.08);
+  }
+
+  .objective-id,
+  .objective-standard,
+  .objective-location {
+    display: grid;
+    gap: 4px;
+  }
+
+  .objective-id::before,
+  .objective-standard::before,
+  .objective-location::before {
+    content: attr(data-label);
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 767px) {
+  .curriculum-detail-header h3 {
+    font-size: 28px;
+  }
+
+  .curriculum-subaccordion-btn {
+    font-size: 16px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Resources Page
+--------------------------------------------------------------*/
+.resources-page {
+  background: #fff;
+}
+
+.resources-hero .page-description {
+  max-width: 720px;
+}
+
+.resource-section {
+  padding: 0;
+  overflow: visible;
+}
+
+.resource-section + .resource-section {
+  margin-top: 48px;
+  padding-top: 42px;
+  border-top: 1px solid rgba(55, 55, 63, 0.1);
+}
+
+.resource-note {
+  margin: 0 0 42px 0;
+  padding: 18px 20px;
+  background: #f7f7f8;
+  border-left: 4px solid var(--color-primary);
+}
+
+.resource-note p {
+  margin: 0;
+  color: #4f5359;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.resource-section-heading {
+  margin-bottom: 18px;
+}
+
+.resource-section-heading h3 {
+  margin: 0;
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.course-list {
+  display: grid;
+  border: 1px solid rgba(55, 55, 63, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.course-row {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) 160px 190px;
+  gap: 18px;
+  align-items: center;
+  padding: 16px 18px;
+  border-top: 1px solid rgba(55, 55, 63, 0.1);
+  color: var(--color-secondary);
+}
+
+.course-row:first-child {
+  border-top: 0;
+}
+
+.course-row:hover {
+  background: #fbf7f7;
+  color: var(--color-secondary);
+}
+
+.course-code {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.course-title {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.course-semester {
+  justify-self: end;
+  color: #686c73;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.course-faculty {
+  justify-self: end;
+  color: #4f5359;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.resource-link-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+}
+
+.resource-link-list a {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(55, 55, 63, 0.1);
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.resource-link-list a:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+  .course-row,
+  .resource-link-list {
+    grid-template-columns: 1fr;
+  }
+
+  .course-row {
+    gap: 6px;
+  }
+
+  .course-semester {
+    justify-self: start;
+  }
+
+  .course-faculty {
+    justify-self: start;
+    text-align: left;
+  }
+}

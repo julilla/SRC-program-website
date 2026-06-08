@@ -7,7 +7,7 @@ License: https://bootstrapmade.com/license/
 
 FOR FUTURE HSTAs:
 
-Each year, update the `People` page, the numbers on the homepage, ...
+Each year, update the `People` page (picture and names), the numbers on the homepage, ...
 
 The code for the modular components (header, sidebar, and footer) are in main.js.
 

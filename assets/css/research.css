@@ -1,0 +1,204 @@
+/*--------------------------------------------------------------
+# Research page (research.html)
+# Visual language follows the curriculum and STA program pages
+--------------------------------------------------------------*/
+:root {
+  --rsrch-border: #e3e3e8;
+  --rsrch-muted: #5f5f6b;
+  --rsrch-tint: #faf6f6;
+  --rsrch-tint-border: #efdfe0;
+}
+
+.rsrch-projects,
+.rsrch-pubs {
+  padding: 60px 0;
+}
+
+.rsrch-pubs {
+  scroll-margin-top: 90px;
+}
+
+/*--------------------------------------------------------------
+# Ongoing research projects
+--------------------------------------------------------------*/
+.rsrch-feature {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border: 1px solid var(--rsrch-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 24px;
+}
+
+.rsrch-feature-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 28px 20px;
+  background: var(--rsrch-tint);
+  border-right: 1px solid var(--rsrch-tint-border);
+  text-align: center;
+}
+
+.rsrch-feature-visual i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 32px;
+}
+
+.rsrch-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--rsrch-tint-border);
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.rsrch-feature-body {
+  padding: 28px 32px;
+}
+
+.rsrch-feature-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.rsrch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.rsrch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid #cfcfd6;
+  background: #fff;
+  color: var(--color-default);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.rsrch-btn:hover,
+.rsrch-btn:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.rsrch-btn-primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.rsrch-btn-primary:hover,
+.rsrch-btn-primary:focus-visible {
+  background: #6f1019;
+  border-color: #6f1019;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Publications: plain list, newest first
+--------------------------------------------------------------*/
+.rsrch-pub-list {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.rsrch-pub-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid #dcdce2;
+}
+
+.rsrch-pub-list li:first-child {
+  padding-top: 0;
+}
+
+.rsrch-pub-title {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.rsrch-authors,
+.rsrch-venue {
+  color: var(--rsrch-muted);
+}
+
+.rsrch-venue {
+  font-style: italic;
+}
+
+.rsrch-doi {
+  margin-left: 6px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rsrch-more {
+  text-align: center;
+  margin: 24px 0 0;
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .rsrch-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .rsrch-feature-visual {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--rsrch-tint-border);
+  }
+
+  .rsrch-feature-visual i {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  .rsrch-feature-body {
+    padding: 22px 20px;
+  }
+
+  .rsrch-feature-body h3 {
+    font-size: 20px;
+  }
+
+  .rsrch-projects .section-header p,
+  .rsrch-pubs .section-header p {
+    font-size: 36px;
+  }
+}

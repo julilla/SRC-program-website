@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Research | SRC @ Brown CS</title>
-  <meta content="" name="description">
+  <meta content="Research on education for socially responsible computing by the Brown CS SRC program: ongoing projects and publications." name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/research.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Yummy
@@ -48,6 +49,7 @@
         <div class="page-hero-content">
           <p class="eyebrow">Research</p>
           <h2>Research</h2>
+          <p class="page-description">We study how responsible computing content can be designed, taught, and evaluated in CS courses, and we share what we learn.</p>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Research</li>
@@ -56,43 +58,104 @@
       </div>
     </div><!-- End Page Hero -->
 
-    <section class="sample-page">
+    <!-- ======= Ongoing research projects ======= -->
+    <section class="rsrch-projects">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <p><span>Brown Socially Responsible Computing Handbook</span></p>
+          <p>Ongoing Research <span>Projects</span></p>
         </div>
-        <p>
-          The Brown Socially Responsible Computing Handbook is an open teaching resource for integrating ethics,
-          responsibility, and social context into computer science education. It is designed for instructors, TAs,
-          and students, and offers practical material for embedding socially responsible computing into existing
-          technical courses rather than treating it as a separate add-on.
-        </p>
-        <p>
-          The handbook includes curated modules on themes such as privacy, accessibility, automated decision making,
-          and generative AI, along with case studies, discussion prompts, and adaptable classroom activities. It is
-          intended to help course staff structure lessons, connect technical content to real societal impact, and
-          support students in critical, inclusive design thinking. Learn more at
-          <a href="https://srch.cs.brown.edu/" target="_blank" rel="noopener noreferrer">srch.cs.brown.edu</a>.
-        </p>
 
+        <article class="rsrch-feature">
+          <div class="rsrch-feature-visual">
+            <i class="bi bi-book"></i>
+            <span class="rsrch-tag">Open teaching resource</span>
+          </div>
+          <div class="rsrch-feature-body">
+            <h3>Brown Socially Responsible Computing Handbook</h3>
+            <p>
+              The Brown Socially Responsible Computing Handbook is an open teaching resource for integrating ethics,
+              responsibility, and social context into computer science education. It is designed for instructors, TAs,
+              and students, and offers practical material for embedding socially responsible computing into existing
+              technical courses rather than treating it as a separate add-on.
+            </p>
+            <p>
+              The handbook includes curated modules on themes such as privacy, accessibility, automated decision making,
+              and generative AI, along with case studies, discussion prompts, and adaptable classroom activities. It is
+              intended to help course staff structure lessons, connect technical content to real societal impact, and
+              support students in critical, inclusive design thinking.
+            </p>
+            <div class="rsrch-actions">
+              <a class="rsrch-btn rsrch-btn-primary" href="https://srch.cs.brown.edu/" target="_blank" rel="noopener">Visit the Handbook <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsrch-feature">
+          <div class="rsrch-feature-visual">
+            <i class="bi bi-people"></i>
+            <span class="rsrch-tag">Assignment design</span>
+          </div>
+          <div class="rsrch-feature-body">
+            <h3>Stakeholder frameworks for assignment design</h3>
+            <p>
+              This research project develops stakeholder-based frameworks for designing technical assignments that make
+              social values and trade-offs explicit. Students implement a concrete feature, such as privacy-related
+              functionality, while working through tensions between stakeholders with competing goals. The aim is to help
+              students translate abstract concepts, such as privacy rights, into concrete technical decisions.
+            </p>
+            <p>
+              Stakeholder frameworks are currently deployed and evaluated in several CS courses at Brown that are part of
+              the study. First results, from a second-year computer systems assignment, show that different stakeholder
+              conflicts lead students to different design choices and value priorities; see our
+              <a href="#publications">USENIX Security 2025 paper</a>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section><!-- End Ongoing research projects -->
+
+    <!-- ======= Publications ======= -->
+    <section class="rsrch-pubs section-bg" id="publications">
+      <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <p><span>A Stakeholder Framework for Assignment Design</span></p>
+          <p><span>Publications</span></p>
         </div>
-        <p>
-          This research project introduces a stakeholder-based framework for designing technical
-          assignments that make social values and trade-offs explicit. The framework asks students to implement a
-          concrete feature (in this case, privacy-related functionality) while working through tensions between
-          stakeholders with competing goals.
+
+        <ul class="rsrch-pub-list">
+          <li>
+            <a class="rsrch-pub-title" href="https://ojs.aaai.org/index.php/AIES/article/view/36759/38897" target="_blank" rel="noopener">Designing Stakeholder-Based Pedagogy for AI Ethics Education: Insights from a Multi-Institutional Case Study</a>
+            <span class="rsrch-authors">Yifan Zhang, Harini Suresh, Julia Netter.</span>
+            <span class="rsrch-venue">AAAI/ACM Conference on AI, Ethics, and Society (AIES), 2025.</span>
+            <a class="rsrch-doi" href="https://doi.org/10.1609/aies.v8i3.36759" target="_blank" rel="noopener">DOI</a>
+          </li>
+          <li>
+            <a class="rsrch-pub-title" href="https://www.usenix.org/system/files/usenixsecurity25-netter.pdf" target="_blank" rel="noopener">A Stakeholder-Based Framework to Highlight Tensions when Implementing Privacy Features</a>
+            <span class="rsrch-authors">Julia Netter, Tim Nelson, Skyler Austen, Eva Lau, Colton Rusch, Malte Schwarzkopf, Kathi Fisler.</span>
+            <span class="rsrch-venue">USENIX Security Symposium, 2025.</span>
+          </li>
+          <li>
+            <a class="rsrch-pub-title" href="https://doi.org/10.1145/3545945.3569760" target="_blank" rel="noopener">A Social Threat Modeling Framework to Structure Teaching about Responsible Computing</a>
+            <span class="rsrch-authors">Yanyan Ren, Kathi Fisler.</span>
+            <span class="rsrch-venue">ACM Technical Symposium on Computer Science Education (SIGCSE), 2023.</span>
+          </li>
+          <li>
+            <a class="rsrch-pub-title" href="https://doi.org/10.1145/3478432.3499222" target="_blank" rel="noopener">Approaches for Weaving Responsible Computing into Data Structures and Algorithms Courses</a>
+            <span class="rsrch-authors">Kathi Fisler, Sorelle Friedler, Kevin Lin, Suresh Venkatasubramanian.</span>
+            <span class="rsrch-venue">ACM Technical Symposium on Computer Science Education (SIGCSE), 2022. Panel.</span>
+          </li>
+          <li>
+            <a class="rsrch-pub-title" href="https://cs.brown.edu/people/kfisler/Pubs/sigcse21-new-model-sta.pdf" target="_blank" rel="noopener">A New Model for Weaving Responsible Computing Into Courses Across the CS Curriculum</a>
+            <span class="rsrch-authors">Lena Cohen, Heila Precel, Harold Triedman, Kathi Fisler.</span>
+            <span class="rsrch-venue">ACM Technical Symposium on Computer Science Education (SIGCSE), 2021.</span>
+            <a class="rsrch-doi" href="https://doi.org/10.1145/3408877.3432456" target="_blank" rel="noopener">DOI</a>
+          </li>
+        </ul>
+
+        <p class="rsrch-more">
+          See <a href="https://cs.brown.edu/people/kfisler/Pubs/index.html" target="_blank" rel="noopener">Kathi Fisler&rsquo;s publications</a> for related work.
         </p>
-        <p>
-          Our paper in USENIX Security 2025 reports on the framework in a second-year computer systems assignment and finds that different
-          stakeholder conflicts lead students to different design choices and value priorities. More broadly, the
-          work shows how assignment design can help students translate abstract concepts (such as privacy rights) into
-          concrete technical decisions. Read the paper at
-          <a href="https://www.usenix.org/system/files/usenixsecurity25-netter.pdf" target="_blank" rel="noopener noreferrer">this link</a>.
-        </p>
-    </div>
-    </section>
+      </div>
+    </section><!-- End Publications -->
 
   </main><!-- End #main -->
 

@@ -31,12 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </li>
           <li class="dropdown"><a href="#"><span>Education</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>STA program</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="sta-program.html">Program structure</a></li>
-                  <li><a href="apply.html">Apply to be an STA</a></li>
-                </ul>
-              </li>
+              <li><a href="sta-program.html">STA program</a></li>
               <li><a href="src-curriculum.html">SRC curriculum</a></li>
               <li><a href="https://srch.cs.brown.edu">SRC Handbook</a></li>
             </ul>

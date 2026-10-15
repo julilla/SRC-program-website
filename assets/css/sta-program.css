@@ -1,0 +1,398 @@
+/*--------------------------------------------------------------
+# STA Program page (sta-program.html)
+# Visual language follows the curriculum page (src-curriculum.css)
+--------------------------------------------------------------*/
+:root {
+  --sta-border: #e3e3e8;
+  --sta-muted: #5f5f6b;
+  --sta-tint: #faf6f6;
+  --sta-tint-border: #efdfe0;
+}
+
+.sta-about,
+.sta-goals,
+.sta-role,
+.sta-who,
+.sta-apply,
+.sta-faq {
+  padding: 60px 0;
+}
+
+.sta-apply,
+.sta-faq {
+  scroll-margin-top: 90px;
+}
+
+.sta-section-intro {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+.sta-title {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.sta-lead {
+  font-size: 18px;
+}
+
+.sta-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 24px;
+  border-radius: 12px;
+  background: var(--sta-tint);
+  border: 1px solid var(--sta-tint-border);
+}
+
+.sta-fact {
+  text-align: center;
+}
+
+.sta-fact-num {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 36px;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.sta-fact-label {
+  display: block;
+  font-size: 13px;
+  line-height: 1.3;
+  color: var(--sta-muted);
+  margin-top: 6px;
+}
+
+.sta-facts .sta-btn {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+}
+
+.sta-facts-link {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.sta-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sta-btn i {
+  font-size: 22px;
+}
+
+.sta-btn small {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.sta-btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.sta-btn-primary:hover,
+.sta-btn-primary:focus-visible {
+  background: #6f1019;
+  color: #fff;
+}
+
+.sta-btn-light {
+  flex: 0 0 auto;
+  background: #fff;
+  color: var(--color-primary);
+}
+
+.sta-btn-light:hover,
+.sta-btn-light:focus-visible {
+  background: #f5dcdf;
+  color: var(--color-primary);
+}
+
+.sta-btn-light i {
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Cards (goals, what STAs do)
+--------------------------------------------------------------*/
+.sta-card {
+  height: 100%;
+  padding: 28px 24px;
+  border: 1px solid var(--sta-border);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.sta-card i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--sta-tint);
+  color: var(--color-primary);
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.sta-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sta-card p {
+  margin: 0;
+}
+
+.sta-card-compact p {
+  font-size: 15px;
+}
+
+/*--------------------------------------------------------------
+# Callouts
+--------------------------------------------------------------*/
+.sta-callout {
+  display: flex;
+  gap: 18px;
+  margin-top: 32px;
+  padding: 22px 24px;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 12px 12px 0;
+  background: var(--sta-tint);
+}
+
+.sta-callout > i {
+  flex: 0 0 auto;
+  font-size: 24px;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.sta-callout h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.sta-callout p {
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Who should apply
+--------------------------------------------------------------*/
+.sta-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--sta-border);
+}
+
+.sta-checklist li {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--sta-border);
+}
+
+.sta-checklist li:first-child {
+  padding-top: 0;
+}
+
+.sta-checklist li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.sta-checklist i {
+  color: var(--color-primary);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+/*--------------------------------------------------------------
+# How to apply
+--------------------------------------------------------------*/
+.sta-cta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 32px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.sta-cta h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sta-cta p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.sta-subhead {
+  font-family: var(--font-primary);
+  font-size: 26px;
+  font-weight: 400;
+  margin: 48px 0 20px;
+}
+
+.sta-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sta-step {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 28px;
+}
+
+/* Connector line between step numbers */
+.sta-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 44px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--sta-tint-border);
+}
+
+.sta-step-num {
+  flex: 0 0 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+
+.sta-step h4 {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 8px 0 8px;
+}
+
+.sta-step p {
+  margin-bottom: 8px;
+}
+
+.sta-note {
+  font-size: 15px;
+  color: var(--sta-muted);
+}
+
+/*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+.sta-faq-list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.sta-faq-list .accordion-item {
+  border: 1px solid var(--sta-border);
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.sta-faq-list .accordion-button {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 17px;
+  padding: 18px 22px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.sta-faq-list .accordion-button:not(.collapsed) {
+  background: var(--sta-tint);
+  color: var(--color-default);
+}
+
+.sta-faq-list .accordion-button:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.sta-faq-list .accordion-body {
+  padding: 18px 22px 22px;
+  line-height: 1.65;
+}
+
+.sta-faq-contact {
+  text-align: center;
+  margin: 28px 0 0;
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .sta-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sta-title {
+    font-size: 30px;
+  }
+
+  .sta-goals .section-header p,
+  .sta-role .section-header p,
+  .sta-who .section-header p,
+  .sta-apply .section-header p,
+  .sta-faq .section-header p {
+    font-size: 36px;
+  }
+
+  .sta-cta {
+    padding: 24px;
+  }
+}

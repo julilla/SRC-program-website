@@ -1779,6 +1779,25 @@ section {
   margin-right: 15px;
   font-size: 24px;
   line-height: 0;
+  color: #e88a94;
+}
+
+/* Links on the dark footer: white text with a rose (lightened brand red) underline.
+   The site-wide brand red is too dark to read here (1.85:1 contrast). */
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #e88a94;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: 0.2s;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+  color: #f6c6cb;
+  text-decoration-color: #f6c6cb;
+  text-decoration-thickness: 2px;
 }
 
 .footer h4 {

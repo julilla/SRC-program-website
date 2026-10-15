@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
           </li>
           <li><a href="research.html">Research</a></li>
-          <li><a href="resources.html">Resources</a></li>
+          <!-- Resources page is hidden for now (resources.html is kept): <li><a href="resources.html">Resources</a></li> -->
         </ul>
       </nav><!-- .navbar -->
 

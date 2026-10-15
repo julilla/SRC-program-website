@@ -1,0 +1,736 @@
+/*--------------------------------------------------------------
+# SRC Curriculum page (src-curriculum.html)
+--------------------------------------------------------------*/
+:root {
+  --curr-border: #e3e3e8;
+  --curr-muted: #5f5f6b;
+  --curr-surface: #fff;
+  --curr-tint: #faf6f6;
+
+  /* Skill-level colors: solid (numbers) / text + background (labels) */
+  --skill-aware: #3d6f91;
+  --skill-aware-text: #24506d;
+  --skill-aware-bg: #e3edf4;
+  --skill-understand: #2b7f6d;
+  --skill-understand-text: #1b5d4f;
+  --skill-understand-bg: #dcefe9;
+  --skill-identify: #9a6a14;
+  --skill-identify-text: #74500f;
+  --skill-identify-bg: #f6ead2;
+  --skill-analyze: #b4512b;
+  --skill-analyze-text: #8f3d1d;
+  --skill-analyze-bg: #f8e2d8;
+  --skill-implement: #911926;
+  --skill-implement-text: #7d1420;
+  --skill-implement-bg: #f5dcdf;
+}
+
+.curriculum-intro,
+.curriculum-levels,
+.curriculum-objectives {
+  padding: 60px 0;
+}
+
+/* The template sets overflow: hidden on sections, which disables position: sticky */
+.curriculum-objectives {
+  overflow: visible;
+}
+
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+.curriculum-title {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.curriculum-lead {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.curriculum-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 24px;
+  border-radius: 12px;
+  background: var(--curr-tint);
+  border: 1px solid #efdfe0;
+}
+
+.curriculum-facts .fact {
+  text-align: center;
+}
+
+.fact-num {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 44px;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.fact-label {
+  display: block;
+  font-size: 13px;
+  color: var(--curr-muted);
+  margin-top: 4px;
+}
+
+.btn-download {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-download:hover,
+.btn-download:focus-visible {
+  background: #6f1019;
+  color: #fff;
+}
+
+.btn-download i {
+  font-size: 26px;
+}
+
+.btn-download small {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.curriculum-h3 {
+  font-family: var(--font-primary);
+  font-size: 28px;
+  font-weight: 400;
+  margin: 48px 0 20px;
+}
+
+.goal-card {
+  height: 100%;
+  padding: 20px;
+  border: 1px solid var(--curr-border);
+  border-radius: 12px;
+  background: var(--curr-surface);
+}
+
+.goal-card i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--curr-tint);
+  color: var(--color-primary);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.goal-card p {
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Skill labels (used inline throughout the page)
+--------------------------------------------------------------*/
+.skill {
+  display: inline-block;
+  padding: 0 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.92em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.skill-aware { color: var(--skill-aware-text); background: var(--skill-aware-bg); }
+.skill-understand { color: var(--skill-understand-text); background: var(--skill-understand-bg); }
+.skill-identify { color: var(--skill-identify-text); background: var(--skill-identify-bg); }
+.skill-analyze { color: var(--skill-analyze-text); background: var(--skill-analyze-bg); }
+.skill-implement { color: var(--skill-implement-text); background: var(--skill-implement-bg); }
+
+/*--------------------------------------------------------------
+# Skill levels
+--------------------------------------------------------------*/
+.skills-intro {
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+
+.skill-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.skill-step {
+  position: relative;
+  padding: 20px 18px;
+  background: var(--curr-surface);
+  border-radius: 12px;
+  border-top: 5px solid var(--step-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.skill-step-aware { --step-color: var(--skill-aware); }
+.skill-step-understand { --step-color: var(--skill-understand); }
+.skill-step-identify { --step-color: var(--skill-identify); }
+.skill-step-analyze { --step-color: var(--skill-analyze); }
+.skill-step-implement { --step-color: var(--skill-implement); }
+
+.skill-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--step-color);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.skill-step h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--step-color);
+  margin-bottom: 8px;
+}
+
+.skill-step p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Arrow between steps on wide screens */
+@media (min-width: 992px) {
+  .skill-step:not(:last-child)::after {
+    content: "\F285"; /* bi-chevron-right */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    right: -15px;
+    top: 26px;
+    font-size: 14px;
+    color: #a0a0aa;
+  }
+}
+
+@media (max-width: 991px) {
+  .skill-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.example-accordion .accordion-item {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--curr-border);
+}
+
+.example-accordion .accordion-button {
+  gap: 10px;
+  font-weight: 600;
+}
+
+.example-accordion .accordion-button i {
+  color: var(--color-primary);
+  font-size: 18px;
+}
+
+.example-goal {
+  padding: 12px 16px;
+  border-left: 4px solid var(--color-primary);
+  background: var(--curr-tint);
+}
+
+.example-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.example-step {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--curr-border);
+}
+
+.example-step:last-child {
+  border-bottom: 0;
+}
+
+.example-step p {
+  margin-bottom: 6px;
+}
+
+.example-instance {
+  color: var(--curr-muted);
+  font-size: 15px;
+}
+
+@media (max-width: 575px) {
+  .example-step {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Learning objectives: table of contents
+--------------------------------------------------------------*/
+.curriculum-toc {
+  position: sticky;
+  top: 110px;
+  max-height: calc(100vh - 130px);
+  overflow-y: auto;
+  padding-bottom: 12px;
+}
+
+.curriculum-toc h2 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--curr-muted);
+  margin-bottom: 12px;
+}
+
+.curriculum-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.curriculum-toc > ul > li {
+  margin-bottom: 6px;
+}
+
+.curriculum-toc a {
+  display: block;
+  color: var(--color-default);
+  padding: 4px 10px;
+  border-left: 3px solid transparent;
+  border-radius: 0 6px 6px 0;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.curriculum-toc > ul > li > a {
+  display: flex;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.toc-num {
+  flex: 0 0 26px;
+  color: var(--color-primary);
+}
+
+.curriculum-toc ul ul a {
+  font-size: 14px;
+  color: var(--curr-muted);
+  padding-left: 44px;
+}
+
+.curriculum-toc a:hover {
+  color: var(--color-primary);
+  background: var(--curr-tint);
+}
+
+.curriculum-toc a.active {
+  border-left-color: var(--color-primary);
+  background: var(--curr-tint);
+}
+
+.curriculum-toc li.is-empty > a {
+  opacity: 0.4;
+}
+
+.toc-download {
+  margin-top: 16px;
+  font-weight: 600;
+  color: var(--color-primary) !important;
+}
+
+/*--------------------------------------------------------------
+# Learning objectives: search and filters
+--------------------------------------------------------------*/
+.objective-tools {
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid var(--curr-border);
+  border-radius: 12px;
+  background: #f7f7f9;
+}
+
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.search-box {
+  position: relative;
+  flex: 1 1 260px;
+}
+
+.search-box i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--curr-muted);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  border: 1px solid #cfcfd6;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.search-box input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.expand-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-tool,
+.btn-clear {
+  border: 1px solid #cfcfd6;
+  background: #fff;
+  color: var(--color-default);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.btn-tool:hover,
+.btn-clear:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.filter-label {
+  flex: 0 0 110px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--curr-muted);
+}
+
+.filter-chip {
+  border: 1px solid #cfcfd6;
+  background: #fff;
+  color: var(--color-default);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 14px;
+  transition: all 0.15s;
+}
+
+.filter-chip:hover {
+  border-color: var(--color-primary);
+}
+
+.filter-chip[aria-pressed="true"] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.filter-chip[aria-pressed="true"]::before {
+  content: "\F26E"; /* bi-check */
+  font-family: "bootstrap-icons";
+  margin-right: 4px;
+  vertical-align: -2px;
+}
+
+.filter-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--curr-muted);
+  margin-top: 6px;
+}
+
+.btn-clear {
+  padding: 3px 10px;
+  font-size: 13px;
+}
+
+@media (max-width: 575px) {
+  .filter-label {
+    flex-basis: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Learning objectives: topic area accordions
+--------------------------------------------------------------*/
+.areas .area {
+  border: 1px solid var(--curr-border);
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin-bottom: 14px;
+  scroll-margin-top: 110px;
+}
+
+.areas .accordion-button {
+  gap: 16px;
+  padding: 18px 20px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.areas .accordion-button:not(.collapsed) {
+  background: var(--curr-tint);
+  color: var(--color-default);
+  border-bottom: 1px solid #efdfe0;
+}
+
+.areas .accordion-button:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.area-numeral {
+  flex: 0 0 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 22px;
+}
+
+.area-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.area-title {
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.area-meta {
+  font-size: 13px;
+  color: var(--curr-muted);
+}
+
+.area-count {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.areas .accordion-body {
+  padding: 8px 20px 20px;
+}
+
+.subsection {
+  scroll-margin-top: 110px;
+}
+
+.subsection-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 24px 0 4px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--curr-border);
+}
+
+.subsection-title span {
+  color: var(--color-primary);
+  margin-right: 6px;
+}
+
+/*--------------------------------------------------------------
+# Learning objectives: individual objectives
+--------------------------------------------------------------*/
+.objective {
+  display: grid;
+  grid-template-columns: 72px 1fr 240px;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--curr-border);
+  scroll-margin-top: 110px;
+}
+
+.subsection .objective:last-child {
+  border-bottom: 0;
+}
+
+.objective:target {
+  background: #fff8e6;
+  box-shadow: 0 0 0 8px #fff8e6;
+  border-radius: 4px;
+}
+
+.objective-ref {
+  align-self: start;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-primary);
+  padding: 3px 0;
+}
+
+.objective-ref:hover {
+  text-decoration: underline;
+}
+
+.objective-text p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.objective-text ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.objective-text li {
+  line-height: 1.65;
+  margin-bottom: 4px;
+}
+
+.courses-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--curr-muted);
+  margin-bottom: 6px;
+}
+
+.objective-courses > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  background: #f3f3f6;
+  border: 1px solid transparent;
+}
+
+.course.is-match {
+  background: #fff;
+  border-color: var(--color-primary);
+}
+
+.course-qualifier .skill {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.course-subs {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: var(--curr-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .objective {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.no-results {
+  padding: 24px;
+  text-align: center;
+  color: var(--curr-muted);
+  border: 1px dashed #cfcfd6;
+  border-radius: 12px;
+}
+
+/*--------------------------------------------------------------
+# Responsive type
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .curriculum-title {
+    font-size: 30px;
+  }
+
+  .curriculum-intro .section-header p,
+  .curriculum-levels .section-header p,
+  .curriculum-objectives .section-header p {
+    font-size: 36px;
+  }
+
+  .area-title {
+    font-size: 17px;
+  }
+
+  .area-numeral {
+    flex-basis: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Print: show everything, hide the interactive tools
+--------------------------------------------------------------*/
+@media print {
+  .header, .footer, .breadcrumbs, .objective-tools, .curriculum-toc, .scroll-top, .btn-download {
+    display: none !important;
+  }
+
+  .collapse:not(.show) {
+    display: block !important;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+}

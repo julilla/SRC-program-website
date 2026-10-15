@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <li><a href="apply.html">Apply to be an STA</a></li>
                 </ul>
               </li>
-              <li><a href="curriculum.html">SRC curriculum</a></li>
+              <li><a href="src-curriculum.html">SRC curriculum</a></li>
               <li><a href="https://srch.cs.brown.edu">SRC Handbook</a></li>
             </ul>
           </li>

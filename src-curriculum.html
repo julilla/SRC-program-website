@@ -6,11 +6,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>SRC Curriculum | SRC @ Brown CS</title>
-  <meta content="" name="description">
+  <meta content="The Integrated Curriculum for Socially Responsible Computing at Brown CS: learning objectives, skill levels, and suggested course locations." name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="favicon.ico" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -18,7 +18,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Oswald:wght@200..700&family=Play:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,14 +28,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/src-curriculum.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Yummy
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -50,262 +43,1122 @@
       <div class="container">
         <div class="page-hero-content">
           <p class="eyebrow">Education</p>
-          <h2>Thematic curriculum for Socially Responsible Computing at Brown</h2>
+          <h2>Integrated Curriculum for Socially Responsible Computing</h2>
+          <p class="page-description">Developed by the Socially Responsible Computing Program at Brown CS.</p>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Education</li>
-            <li>Thematic Curriculum</li>
+            <li>SRC Curriculum</li>
           </ol>
         </div>
       </div>
     </div><!-- End Page Hero -->
 
-    <section class="sample-page">
+    <!-- ======= Intro ======= -->
+    <section class="curriculum-intro">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-8">
+            <h2 class="curriculum-title">What should every Brown CS graduate know about computing&rsquo;s impact on society?</h2>
+            <p class="curriculum-lead">
+              The Integrated Curriculum for Socially Responsible Computing is our answer. It sets out the social, ethical, and political
+              knowledge and skills we want students to build over the course of a CS degree, and suggests where in the
+              curriculum each topic fits best. Rather than gathering these questions into a single ethics course, it weaves them
+              into technical courses, from introductory sequences to upper-level electives, so that students meet them where they
+              actually arise in computing work and deepen their understanding as they progress.
+            </p>
+            <p>
+              The curriculum is a resource for <strong>instructors and teaching staff</strong>, including our
+              <a href="sta-program.html">Socially Responsible Computing Teaching Assistants (STAs)</a>, deciding what SRC content to
+              include in a course, and for <strong>students and colleagues</strong> who want to see how responsible computing fits
+              into a computer science education. It is organized into five topic areas. Each one contains learning objectives that
+              state what students should be able to do, at which skill level, and in which kinds of courses we suggest the content
+              be taught.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="curriculum-facts">
+              <div class="fact"><span class="fact-num">5</span><span class="fact-label">topic areas</span></div>
+              <div class="fact"><span class="fact-num">57</span><span class="fact-label">learning objectives</span></div>
+              <div class="fact"><span class="fact-num">5</span><span class="fact-label">skill levels</span></div>
+              <a class="btn-download" href="assets/docs/SRC-Curriculum-September-2026.pdf" download>
+                <i class="bi bi-file-earmark-arrow-down"></i>
+                <span>Download the full curriculum<small>PDF &middot; updated September 2026</small></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="curriculum-h3">Curriculum goals</h3>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3"><div class="goal-card"><i class="bi bi-signpost-split"></i><p>Help courses determine what to teach in terms of SRC</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="goal-card"><i class="bi bi-intersect"></i><p>Reduce duplication of SRC content across courses</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="goal-card"><i class="bi bi-mortarboard"></i><p>Establish the SRC-related skills that a Brown CS graduate should have</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="goal-card"><i class="bi bi-bar-chart-steps"></i><p>Allow courses to build on SRC topics across courses and deepen the quality of content</p></div></div>
+        </div>
+      </div>
+    </section><!-- End Intro -->
+
+    <!-- ======= Skill levels ======= -->
+    <section class="curriculum-levels section-bg" id="skill-levels">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <!--<h2>Our Menu</h2>-->
-          <h2><span>Heading</span></h2>
+          <p>Five <span>Skill Levels</span></p>
         </div>
-        <p>
-          What is this curriculum-thingy?
-        <p>
-          Who is this for?
+        <p class="text-center skills-intro">
+          Each learning objective names the skill level students should reach. The levels build on one another, from knowing
+          that an issue exists to acting on it in technical work. Throughout this page, they are marked with these colored labels.
         </p>
-        <p>
-          How is it organized?
-        </p>
-    
+        <ol class="skill-steps">
+          <li class="skill-step skill-step-aware">
+            <span class="skill-step-num">1</span>
+            <h3>Be aware of</h3>
+            <p>Students have heard of a concept/idea and how it relates to a given (technical) context. Students are able to recall the concept/idea as relevant in a specific context. (&ldquo;I know X is a thing.&rdquo;)</p>
+          </li>
+          <li class="skill-step skill-step-understand">
+            <span class="skill-step-num">2</span>
+            <h3>Understand</h3>
+            <p>Students can explain the meaning and/or significance of a specific concept/idea. They can articulate how it functions and/or why it is important.</p>
+          </li>
+          <li class="skill-step skill-step-identify">
+            <span class="skill-step-num">3</span>
+            <h3>Identify</h3>
+            <p>Students are able to recognize relevant concerns in a specific technical context without prompting and are able to articulate how they would affect relevant technical decisions.</p>
+          </li>
+          <li class="skill-step skill-step-analyze">
+            <span class="skill-step-num">4</span>
+            <h3>Analyze</h3>
+            <p>Students are able to critically evaluate a specific concept/idea, either abstractly or in a specific (social or technical) context. They are able to cite and engage with different concerns and/or (conflicting) perspectives on the topic in question.</p>
+          </li>
+          <li class="skill-step skill-step-implement">
+            <span class="skill-step-num">5</span>
+            <h3>Implement</h3>
+            <p>Students are able to execute concrete technical decisions or use specific techniques to achieve a desired objective.</p>
+          </li>
+        </ol>
 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion example-accordion" id="exampleAccordion">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                1. Privacy and Data Protection   
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example-body" aria-expanded="false" aria-controls="example-body">
+                <i class="bi bi-lightbulb"></i>
+                <span>Example: how learning objective I.a.1 progresses through the five levels</span>
               </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body"><table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" style="width: 5%"></th>
-                    <th scope="col" style="width: 80%">Students should ...</th>
-                    <th scope="col" style="width: 15%">Course level</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1.a</th>
-                    <td>Understand the extent of data collection and reliance of technologies on large volumes of personal data </td>
-                    <td>Intro</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.a.i</th>
-                    <td>Grasp the difference and between overt and covert data collection, use, and sharing </td>
-                    <td>Intro</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.a.ii</th>
-                    <td>Understand the limitation of the distinction between sensitive and non-sensitive data and understand the potential for and danger of re-identification</td>
-                    <td>Intro</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.b </th>
-                    <td>Understand and articulate value and functions of privacy (including short term and long-term privacy threats) </td>
-                    <td>Intro</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.c </th>
-                    <td>Be familiar and be able to apply key aspects of major privacy regulations (e.g., CCPA, GDPR, ...) </td>
-                    <td>Intermediate, 1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.d </th>
-                    <td>Recognize instances of data collection which enable surveillance and sousveillance (inverse/lateral) surveillance </td>
-                    <td>Intermediate, 1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.e </th>
-                    <td>Be able to reason about tradeoffs between privacy and other goods, such as transparency, accountability, safety, or security </td>
-                    <td>1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.f </th>
-                    <td>Understand different conceptions of consent, their potential and limitations as an instrument for data protection </td>
-                    <td>Intro</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.g.i </th>
-                    <td>Be familiar with widely-used encryption technologies (e.g., public key encryption) and key principles of how they work work </td>
-                    <td>Intermediate, 1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1.g.ii </th>
-                    <td>Be able to articulate and engage with prominent controversies surrounding encryption </td>
-                    <td>1000-level</td>
-                  </tr>
-                </tbody>
-              </table></div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                2. Data and AI: accuracy, fairness, justice
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body"><table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" style="width: 5%"></th>
-                    <th scope="col" style="width: 80%">Students should ...</th>
-                    <th scope="col" style="width: 15%">Course level</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">2.a.i</th>
-                    <td>Understand that representing aspects of the world through data is necessarily reductive and incomplete and that developer perspective shapes the choice and design of variables</td>
-                    <td>Intro</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2.a.ii</th>
-                    <td>Be able to point out variables in datasets which emphasize a particular perspective and identify possible effects of redesigning them</td>
-                    <td>Intro, Intermediate</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2.b </th>
-                    <td>Understand different sources of bias in algorithmic and AI systems (societal vs. dataset vs. system parameters) and their interactions </td>
-                    <td>Intro, Intermediate</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2.c.i </th>
-                    <td>Understand and articulate formal-statistical and substantive conceptions of fairness and justice and understand how they may diverge</td>
-                    <td>Intermediate, 1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2.c.ii </th>
-                    <td>Make nuanced judgments on tradeoffs between different (formal and substantive) conceptions of algorithmic justice </td>
-                    <td>1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2.d </th>
-                    <td>Recognise context-specific limitations of algorithmic and AI decision making and judge when the use of such systems is appropriate and when human decision-making is preferable or required  </td>
-                    <td>1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2.e </th>
-                    <td>Understand and assess different standards for understanding algorithmic and AI decisions: e.g., transparency, explainability</td>
-                    <td>Intermediate, 1000-level</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2.f </th>
-                    <td>Engage with public-interest-focused applications of AI
-                    </td>
-                    <td>Intro, Intermediate, 1000-level</td>
-                  </tr>
-                </tbody>
-              </table></div> 
-
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                3. Communication and public discourse
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            </h3>
+            <div id="example-body" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <div class="accordion-body"><table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col" style="width: 5%"></th>
-                      <th scope="col" style="width: 80%">Students should ...</th>
-                      <th scope="col" style="width: 15%">Course level</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">3.a</th>
-                      <td>Understand and articulate tensions between social pluralism and freedom of expression and user safety and comfort in content moderation </td>
-                      <td>Intermediate, 1000-level</td>
-                    </tr>
-                  </tbody>
-                </table></div> 
+                <p class="example-goal"><strong>I.a.1:</strong> Representing aspects of the world through data is necessarily reductive and incomplete. Developer perspective shapes the choice and design of variables.</p>
+                <ol class="example-steps">
+              <li class="example-step">
+                <div class="example-level"><span class="skill skill-aware">Be aware of</span></div>
+                <div>
+                  <p>Students have heard of the limitations of data and developer perspective for creating truly representative models. (&ldquo;I know all models are imperfect.&rdquo;)</p>
+                  <p class="example-instance"><strong>For example:</strong> They have heard of the impossibility of creating a comprehensive climate model.</p>
+                </div>
+              </li>
+              <li class="example-step">
+                <div class="example-level"><span class="skill skill-understand">Understand</span></div>
+                <div>
+                  <p>Students can explain the meaning and/or significance of representing aspects of the world through data. They can articulate how data and datasets lead to imperfect models, how developer choice will shape the design of the model, and why data are important to interpreting and building incomplete and reductive models.</p>
+                  <p class="example-instance"><strong>For example:</strong> Students can explain why no dataset can possibly cover all relevant variables when building a model predicting the rise of temperatures in Latin America, and how/why the choices of what to include/exclude will impact any model, including a climate model.</p>
+                </div>
+              </li>
+              <li class="example-step">
+                <div class="example-level"><span class="skill skill-identify">Identify</span></div>
+                <div>
+                  <p>Students are able to recognize the limitations of a given model or dataset without prompting. They are able to articulate how the choice and design of variables affect a model.</p>
+                  <p class="example-instance"><strong>For example:</strong> Given a dataset of historical temperatures in Latin American countries, students are able to recognize the inclusion/exclusion of some country or variable, such as cloud cover, wind speed, or time of temperature recorded will impact the accuracy of a climate model.</p>
+                </div>
+              </li>
+              <li class="example-step">
+                <div class="example-level"><span class="skill skill-analyze">Analyze</span></div>
+                <div>
+                  <p>Students are able to critically evaluate choice and design of variables in creating an imperfect model. They are able to cite and engage with different concerns and/or (conflicting) perspectives on creating models.</p>
+                  <p class="example-instance"><strong>For example:</strong> Students are able to critically evaluate whether data on rising sea levels is or is not important to include in a climate model, and how this potentially interacts with other values, such as runtime, transparency, or accessibility.</p>
+                </div>
+              </li>
+              <li class="example-step">
+                <div class="example-level"><span class="skill skill-implement">Implement</span></div>
+                <div>
+                  <p>Students are able to execute concrete technical decisions or use specific techniques to achieve a desired model for their purposes and within the appropriate context.</p>
+                  <p class="example-instance"><strong>For example:</strong> Students are able to execute feature engineering or hyperparameter tuning to further the accuracy of their model, while recognizing that their model will still be necessarily reductive and incomplete.</p>
+                </div>
+              </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Skill levels -->
+
+    <!-- ======= Learning objectives ======= -->
+    <section class="curriculum-objectives" id="learning-objectives">
+      <div class="container">
+        <div class="section-header">
+          <p>Learning <span>Objectives</span></p>
+        </div>
+
+        <div class="row gx-lg-5">
+          <aside class="col-lg-3 d-none d-lg-block">
+            <nav class="curriculum-toc" aria-label="Topic areas">
+              <h2>Topic areas</h2>
+              <ul>
+              <li><a href="#area-I" data-area="I"><span class="toc-num">I</span>Data Science and Artificial Intelligence</a>
+                <ul>
+                  <li><a href="#sub-Ia" data-area="I">a. Modeling and Analysis</a></li>
+                  <li><a href="#sub-Ib" data-area="I">b. Automated Decision-Making</a></li>
+                  <li><a href="#sub-Ic" data-area="I">c. Generative AI</a></li>
+                </ul>
+              </li>
+              <li><a href="#area-II" data-area="II"><span class="toc-num">II</span>Data Collection, Protection, and Privacy</a>
+              </li>
+              <li><a href="#area-III" data-area="III"><span class="toc-num">III</span>Design and User Experience</a>
+                <ul>
+                  <li><a href="#sub-IIIa" data-area="III">a. Responsible Design</a></li>
+                  <li><a href="#sub-IIIb" data-area="III">b. Accessibility</a></li>
+                  <li><a href="#sub-IIIc" data-area="III">c. Technology and the Self</a></li>
+                </ul>
+              </li>
+              <li><a href="#area-IV" data-area="IV"><span class="toc-num">IV</span>Technology in Context</a>
+                <ul>
+                  <li><a href="#sub-IVa" data-area="IV">a. Sustainability</a></li>
+                  <li><a href="#sub-IVb" data-area="IV">b. Technology and Labor</a></li>
+                  <li><a href="#sub-IVc" data-area="IV">c. The Internet and Public Discourse</a></li>
+                  <li><a href="#sub-IVd" data-area="IV">d. Technology, History, and International Relations</a></li>
+                </ul>
+              </li>
+              <li><a href="#area-V" data-area="V"><span class="toc-num">V</span>Stakeholder Engagement</a>
+              </li>
+              </ul>
+              <a class="toc-download" href="assets/docs/SRC-Curriculum-September-2026.pdf" download><i class="bi bi-file-earmark-pdf"></i> Download PDF</a>
+            </nav>
+          </aside>
+
+          <div class="col-lg-9">
+            <div class="objective-tools">
+              <div class="search-row">
+                <label class="visually-hidden" for="objective-search">Search learning objectives</label>
+                <div class="search-box">
+                  <i class="bi bi-search"></i>
+                  <input type="search" id="objective-search" placeholder="Search objectives, e.g. &ldquo;privacy&rdquo; or &ldquo;IV.c&rdquo;" autocomplete="off">
+                </div>
+                <div class="expand-buttons">
+                  <button type="button" class="btn-tool" id="expand-all"><i class="bi bi-arrows-expand"></i> Expand all</button>
+                  <button type="button" class="btn-tool" id="collapse-all"><i class="bi bi-arrows-collapse"></i> Collapse all</button>
+                </div>
+              </div>
+              <div class="filter-group" role="group" aria-label="Filter by course level">
+                <span class="filter-label">Course level</span>
+                <button type="button" class="filter-chip" data-filter="level" data-value="intro" aria-pressed="false">Introductory</button>
+                <button type="button" class="filter-chip" data-filter="level" data-value="foundations" aria-pressed="false">Foundations</button>
+                <button type="button" class="filter-chip" data-filter="level" data-value="intermediate" aria-pressed="false">Intermediate</button>
+                <button type="button" class="filter-chip" data-filter="level" data-value="upper" aria-pressed="false">Upper-level</button>
+              </div>
+              <div class="filter-group" role="group" aria-label="Filter by subject area">
+                <span class="filter-label">Subject area</span>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="ai" aria-pressed="false">AI</button>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="systems" aria-pressed="false">Systems</button>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="se" aria-pressed="false">Software Engineering</button>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="hci" aria-pressed="false">HCI</button>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="security" aria-pressed="false">Security</button>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="hardware" aria-pressed="false">Hardware</button>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="networks" aria-pressed="false">Networks</button>
+                <button type="button" class="filter-chip" data-filter="subject" data-value="socio" aria-pressed="false">Socio-technical</button>
+              </div>
+              <div class="filter-status" aria-live="polite">
+                <span id="filter-count">Showing all 57 learning objectives</span>
+                <button type="button" class="btn-clear" id="clear-filters" hidden>Clear filters</button>
+              </div>
+            </div>
+
+            <div class="accordion areas" id="areas">
+          <div class="accordion-item area" id="area-I">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#area-I-body" aria-expanded="false" aria-controls="area-I-body">
+                <span class="area-numeral">I</span>
+                <span class="area-heading">
+                  <span class="area-title">Data Science and Artificial Intelligence</span>
+                  <span class="area-meta"><span class="area-count" data-total="14">14 objectives</span> &middot; Modeling and Analysis &middot; Automated Decision-Making &middot; Generative AI</span>
+                </span>
+              </button>
+            </h3>
+            <div id="area-I-body" class="accordion-collapse collapse area-collapse">
+              <div class="accordion-body">
+                <div class="subsection" id="sub-Ia">
+                  <h4 class="subsection-title"><span>I.a</span> Modeling and Analysis</h4>
+                  <article class="objective" id="obj-Ia1">
+                    <a class="objective-ref" href="#obj-Ia1" title="Link to objective I.a.1">I.a.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> that representing aspects of the world through data is necessarily reductive and incomplete. Developer perspective shapes the choice and design of variables</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ia2">
+                    <a class="objective-ref" href="#obj-Ia2" title="Link to objective I.a.2">I.a.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-identify">Identify</span> variables in datasets that emphasize a particular perspective and the possible impacts of redesigning those datasets</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                        <li class="course" data-level="" data-subject="ai"><span class="course-name">AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="subsection" id="sub-Ib">
+                  <h4 class="subsection-title"><span>I.b</span> Automated Decision-Making</h4>
+                  <article class="objective" id="obj-Ib1">
+                    <a class="objective-ref" href="#obj-Ib1" title="Link to objective I.b.1">I.b.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> different sources of bias in algorithmic and AI systems (societal vs. dataset vs. system parameters) and their interactions</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ib2">
+                    <a class="objective-ref" href="#obj-Ib2" title="Link to objective I.b.2">I.b.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> and <span class="skill skill-understand">Understand</span> metrics to mathematically interpret fairness</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span> <span class="course-qualifier"><span class="skill skill-aware">Be aware of</span></span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span> <span class="course-qualifier"><span class="skill skill-understand">Understand</span></span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ib3">
+                    <a class="objective-ref" href="#obj-Ib3" title="Link to objective I.b.3">I.b.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> approaches for bias mitigation</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ib4">
+                    <a class="objective-ref" href="#obj-Ib4" title="Link to objective I.b.4">I.b.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> and <span class="skill skill-understand">Understand</span> different concepts of justice as they relate to automated decision-making systems</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span> <span class="course-qualifier"><span class="skill skill-aware">Be aware of</span></span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span> <span class="course-qualifier"><span class="skill skill-understand">Understand</span></span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ib5">
+                    <a class="objective-ref" href="#obj-Ib5" title="Link to objective I.b.5">I.b.5</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> context-specific limitations of automated decision-making and <span class="skill skill-analyze">Analyze</span> when the use of such systems is appropriate and when human decision-making is preferable or required</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ib6">
+                    <a class="objective-ref" href="#obj-Ib6" title="Link to objective I.b.6">I.b.6</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> and <span class="skill skill-analyze">Analyze</span> different standards for interpreting algorithmic and AI decisions: e.g., transparency, explainability</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span> <span class="course-qualifier"><span class="skill skill-understand">Understand</span></span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span> <span class="course-qualifier"><span class="skill skill-analyze">Analyze</span></span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ib7">
+                    <a class="objective-ref" href="#obj-Ib7" title="Link to objective I.b.7">I.b.7</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> different methods and strategies for AI governance</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="subsection" id="sub-Ic">
+                  <h4 class="subsection-title"><span>I.c</span> Generative AI</h4>
+                  <article class="objective" id="obj-Ic1">
+                    <a class="objective-ref" href="#obj-Ic1" title="Link to objective I.c.1">I.c.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the distinct mechanisms by which AI systems can produce harm</p>
+                      <ul>
+                        <li><span class="skill skill-understand">Understand</span> how the unpredictability of generative AI systems and the contexts in which they are deployed means that they cannot, at present, be designed to reliably avoid harmful outcomes</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ic2">
+                    <a class="objective-ref" href="#obj-Ic2" title="Link to objective I.c.2">I.c.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> strategies to identify, evaluate, and mitigate harms stemming from unpredictability in AI systems</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span></li>
+                        <li class="course" data-level="" data-subject="socio"><span class="course-name">Socio-technical courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ic3">
+                    <a class="objective-ref" href="#obj-Ic3" title="Link to objective I.c.3">I.c.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> the effects of widespread use of synthetic content on one&rsquo;s ability to control their likeness and public perception</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ic4">
+                    <a class="objective-ref" href="#obj-Ic4" title="Link to objective I.c.4">I.c.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> the legal frameworks governing copyright and intellectual property as they relate to generative AI</p>
+                      <ul>
+                        <li><span class="skill skill-aware">Be aware of</span> questions regarding the copyrightability of AI-generated outputs</li>
+                        <li><span class="skill skill-aware">Be aware of</span> questions regarding the legality of training models on copyrighted data</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-Ic5">
+                    <a class="objective-ref" href="#obj-Ic5" title="Link to objective I.c.5">I.c.5</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> opportunities and risks of generative AI in the future of work (e.g., deskilling, lack of connectivity)</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                Can I work as an STA and a UTA at the same time?
+          <div class="accordion-item area" id="area-II">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#area-II-body" aria-expanded="false" aria-controls="area-II-body">
+                <span class="area-numeral">II</span>
+                <span class="area-heading">
+                  <span class="area-title">Data Collection, Protection, and Privacy</span>
+                  <span class="area-meta"><span class="area-count" data-total="9">9 objectives</span></span>
+                </span>
               </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </h3>
+            <div id="area-II-body" class="accordion-collapse collapse area-collapse">
+              <div class="accordion-body">
+                <div class="subsection">
+                  <article class="objective" id="obj-II1">
+                    <a class="objective-ref" href="#obj-II1" title="Link to objective II.1">II.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> the extent of data collection and reliance of technologies on large volumes of personal data</p>
+                      <ul>
+                        <li><span class="skill skill-understand">Understand</span> the concept of surveillance capitalism and alternative economic models</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II2">
+                    <a class="objective-ref" href="#obj-II2" title="Link to objective II.2">II.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> and <span class="skill skill-identify">Identify</span> different mechanisms of data collection&mdash;overt, covert, and from other sources (i.e., via sharing)&mdash;and their implications on privacy</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II3">
+                    <a class="objective-ref" href="#obj-II3" title="Link to objective II.3">II.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the limitations of the distinction between sensitive and non-sensitive data, especially considering the potential for re-identification</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II4">
+                    <a class="objective-ref" href="#obj-II4" title="Link to objective II.4">II.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the value and functions of privacy (including how both short-term and long-term privacy risks may threaten those)</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II5">
+                    <a class="objective-ref" href="#obj-II5" title="Link to objective II.5">II.5</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> (and <span class="skill skill-implement">Implement</span>) key aspects of major privacy regulations, standards, etc. (e.g., CCPA, GDPR, &hellip;)</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="systems"><span class="course-name">Systems foundation course</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II6">
+                    <a class="objective-ref" href="#obj-II6" title="Link to objective II.6">II.6</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> trade-offs between privacy and other values, such as transparency, accountability, safety, or security</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="systems"><span class="course-name">Systems courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II7">
+                    <a class="objective-ref" href="#obj-II7" title="Link to objective II.7">II.7</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> surveillance and <span class="skill skill-identify">Identify</span> instances of data collection that enable surveillance</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                        <li class="course" data-level="upper" data-subject="systems"><span class="course-name">Upper-level systems courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II8">
+                    <a class="objective-ref" href="#obj-II8" title="Link to objective II.8">II.8</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> different conceptions of consent, and its potential and limitations as an instrument for data protection</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-II9">
+                    <a class="objective-ref" href="#obj-II9" title="Link to objective II.9">II.9</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> widely-used privacy-preserving/enhancing technologies (e.g., encryption, differential privacy)</p>
+                      <ul>
+                        <li><span class="skill skill-understand">Understand</span> their limitations</li>
+                        <li><span class="skill skill-analyze">Analyze</span> prominent controversies surrounding them</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="se"><span class="course-name">Software Engineering courses</span></li>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
 
-           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                What kind of support and training do STAs receive?
+          <div class="accordion-item area" id="area-III">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#area-III-body" aria-expanded="false" aria-controls="area-III-body">
+                <span class="area-numeral">III</span>
+                <span class="area-heading">
+                  <span class="area-title">Design and User Experience</span>
+                  <span class="area-meta"><span class="area-count" data-total="10">10 objectives</span> &middot; Responsible Design &middot; Accessibility &middot; Technology and the Self</span>
+                </span>
               </button>
-            </h2>
-            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </h3>
+            <div id="area-III-body" class="accordion-collapse collapse area-collapse">
+              <div class="accordion-body">
+                <div class="subsection" id="sub-IIIa">
+                  <h4 class="subsection-title"><span>III.a</span> Responsible Design</h4>
+                  <article class="objective" id="obj-IIIa1">
+                    <a class="objective-ref" href="#obj-IIIa1" title="Link to objective III.a.1">III.a.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> (and <span class="skill skill-implement">Implement</span>) different design processes for evaluating the needs of diverse users and <span class="skill skill-analyze">Analyze</span> their appropriateness in various contexts</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IIIa2">
+                    <a class="objective-ref" href="#obj-IIIa2" title="Link to objective III.a.2">III.a.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> and <span class="skill skill-identify">Identify</span> how different biases can influence one&rsquo;s judgment and shape design decisions</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="subsection" id="sub-IIIb">
+                  <h4 class="subsection-title"><span>III.b</span> Accessibility</h4>
+                  <article class="objective" id="obj-IIIb1">
+                    <a class="objective-ref" href="#obj-IIIb1" title="Link to objective III.b.1">III.b.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> varying definitions and conceptions of accessibility</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IIIb2">
+                    <a class="objective-ref" href="#obj-IIIb2" title="Link to objective III.b.2">III.b.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-identify">Identify</span> opportunities to apply and <span class="skill skill-implement">Implement</span> standards and best practices for accessibility</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                        <li class="course" data-level="" data-subject="se"><span class="course-name">Software Engineering courses</span></li>
+                        <li class="course" data-level="" data-subject="hci"><span class="course-name">HCI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IIIb3">
+                    <a class="objective-ref" href="#obj-IIIb3" title="Link to objective III.b.3">III.b.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-identify">Identify</span> and <span class="skill skill-analyze">Analyze</span> intersections between accessibility and other values such as privacy, security, or sustainability</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="se"><span class="course-name">Software Engineering courses</span></li>
+                        <li class="course" data-level="" data-subject="hci"><span class="course-name">HCI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="subsection" id="sub-IIIc">
+                  <h4 class="subsection-title"><span>III.c</span> Technology and the Self</h4>
+                  <article class="objective" id="obj-IIIc1">
+                    <a class="objective-ref" href="#obj-IIIc1" title="Link to objective III.c.1">III.c.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> how technology is used to direct users&rsquo; attention and shape their interests, preferences, and desires</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IIIc2">
+                    <a class="objective-ref" href="#obj-IIIc2" title="Link to objective III.c.2">III.c.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> how psychological mechanisms and cognitive biases can be exploited by technical means to direct user attention and behavior (e.g., nudging via deceptive patterns)</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="hci"><span class="course-name">HCI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IIIc3">
+                    <a class="objective-ref" href="#obj-IIIc3" title="Link to objective III.c.3">III.c.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> the value of attention and the consequences of yielding control over it</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="socio"><span class="course-name">Socio-technical courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IIIc4">
+                    <a class="objective-ref" href="#obj-IIIc4" title="Link to objective III.c.4">III.c.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> the effect of technologies on our self-perception and relationship with ourselves</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="socio"><span class="course-name">Socio-technical courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IIIc5">
+                    <a class="objective-ref" href="#obj-IIIc5" title="Link to objective III.c.5">III.c.5</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> the effect of technologies on the nature and quality of interpersonal relationships</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingSeven">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                I'm not a CS concentrator. Can I still become an STA?
+          <div class="accordion-item area" id="area-IV">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#area-IV-body" aria-expanded="false" aria-controls="area-IV-body">
+                <span class="area-numeral">IV</span>
+                <span class="area-heading">
+                  <span class="area-title">Technology in Context</span>
+                  <span class="area-meta"><span class="area-count" data-total="16">16 objectives</span> &middot; Sustainability &middot; Technology and Labor &middot; The Internet and Public Discourse &middot; Technology, History, and International Relations</span>
+                </span>
               </button>
-            </h2>
-            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </h3>
+            <div id="area-IV-body" class="accordion-collapse collapse area-collapse">
+              <div class="accordion-body">
+                <div class="subsection" id="sub-IVa">
+                  <h4 class="subsection-title"><span>IV.a</span> Sustainability</h4>
+                  <article class="objective" id="obj-IVa1">
+                    <a class="objective-ref" href="#obj-IVa1" title="Link to objective IV.a.1">IV.a.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> and <span class="skill skill-identify">Identify</span> potential environmental impacts of a specific technology:</p>
+                      <ul>
+                        <li>Natural resource consumption</li>
+                        <li>Energy consumption</li>
+                        <li>E-waste production</li>
+                        <li>Pollution</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span><ul class="course-subs"><li>natural resource consumption</li><li>pollution</li></ul></li>
+                        <li class="course" data-level="" data-subject="hardware"><span class="course-name">Hardware-focused courses (computer architecture, embedded systems)</span><ul class="course-subs"><li>e-waste production</li></ul></li>
+                        <li class="course" data-level="" data-subject="ai"><span class="course-name">AI courses</span><ul class="course-subs"><li>energy consumption</li></ul></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVa2">
+                    <a class="objective-ref" href="#obj-IVa2" title="Link to objective IV.a.2">IV.a.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> how the environmental impacts of technology have disproportionate socioeconomic effects on different populations</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVa3">
+                    <a class="objective-ref" href="#obj-IVa3" title="Link to objective IV.a.3">IV.a.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the need for infrastructural sustainability and the means and challenges of ensuring hardware and software maintenance and preservation</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject="systems"><span class="course-name">Systems foundation course</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVa4">
+                    <a class="objective-ref" href="#obj-IVa4" title="Link to objective IV.a.4">IV.a.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the need for and challenges of ensuring data sustainability</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="subsection" id="sub-IVb">
+                  <h4 class="subsection-title"><span>IV.b</span> Technology and Labor</h4>
+                  <article class="objective" id="obj-IVb1">
+                    <a class="objective-ref" href="#obj-IVb1" title="Link to objective IV.b.1">IV.b.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-identify">Identify</span> skills and roles that advancements in specific technologies (e.g., automation, generative AI) are likely to displace, create, or evolve, and <span class="skill skill-analyze">Analyze</span> the (socio-)economic implications of these changes</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                        <li class="course" data-level="" data-subject="se"><span class="course-name">Software Engineering courses</span></li>
+                        <li class="course" data-level="" data-subject="ai"><span class="course-name">AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVb2">
+                    <a class="objective-ref" href="#obj-IVb2" title="Link to objective IV.b.2">IV.b.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> the human labor involved in and the physical and psychological effects of:</p>
+                      <ul>
+                        <li>Training AI models (including data labeling and curation)</li>
+                        <li>Surveillance</li>
+                        <li>Content moderation</li>
+                        <li>Hardware fabrication and resource collection</li>
+                        <li>Data generation</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                        <li class="course" data-level="" data-subject="hardware"><span class="course-name">Hardware-focused courses (computer architecture, embedded systems)</span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="subsection" id="sub-IVc">
+                  <h4 class="subsection-title"><span>IV.c</span> The Internet and Public Discourse</h4>
+                  <article class="objective" id="obj-IVc1">
+                    <a class="objective-ref" href="#obj-IVc1" title="Link to objective IV.c.1">IV.c.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the effect of content moderation on social pluralism</p>
+                      <ul>
+                        <li><span class="skill skill-analyze">Analyze</span> the tensions between free expression of ideas and user safety/comfort in online spaces</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="networks"><span class="course-name">Computer Networks courses</span></li>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVc2">
+                    <a class="objective-ref" href="#obj-IVc2" title="Link to objective IV.c.2">IV.c.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the effects of algorithmic/AI-based curation of information on public discourse (e.g., filter bubbles, echo chambers)</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVc3">
+                    <a class="objective-ref" href="#obj-IVc3" title="Link to objective IV.c.3">IV.c.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the role of specific technologies (e.g., social media, generative AI) in spreading misinformation or disinformation</p>
+                      <ul>
+                        <li><span class="skill skill-aware">Be aware of</span> the effect of specific technologies on erosion of trust in individuals, institutions, and providers of information</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span> <span class="course-qualifier"><span class="skill skill-understand">Understand</span></span></li>
+                        <li class="course" data-level="upper" data-subject="ai"><span class="course-name">Upper-level AI courses</span> <span class="course-qualifier"><span class="skill skill-aware">Be aware of</span></span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVc4">
+                    <a class="objective-ref" href="#obj-IVc4" title="Link to objective IV.c.4">IV.c.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> the potential and limitations of technical and non-technical mitigation approaches to curb the spread of mis-/disinformation</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="socio"><span class="course-name">Socio-technical courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVc5">
+                    <a class="objective-ref" href="#obj-IVc5" title="Link to objective IV.c.5">IV.c.5</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> how technical infrastructure and regulation of that infrastructure shapes the ways in which we communicate and consume information</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="networks"><span class="course-name">Computer Networks courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVc6">
+                    <a class="objective-ref" href="#obj-IVc6" title="Link to objective IV.c.6">IV.c.6</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> how easy access to recording devices and social networks for distribution creates transparency and enables individuals and social movements to hold institutions and other powerful actors accountable (i.e., sousveillance)</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                        <li class="course" data-level="" data-subject="socio"><span class="course-name">Socio-technical courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="subsection" id="sub-IVd">
+                  <h4 class="subsection-title"><span>IV.d</span> Technology, History, and International Relations</h4>
+                  <article class="objective" id="obj-IVd1">
+                    <a class="objective-ref" href="#obj-IVd1" title="Link to objective IV.d.1">IV.d.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> how global power structures shape technological development and how technological development, in turn, reshapes global power structures</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="se"><span class="course-name">Software Engineering courses</span></li>
+                        <li class="course" data-level="foundations" data-subject="ai"><span class="course-name">AI foundations course</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVd2">
+                    <a class="objective-ref" href="#obj-IVd2" title="Link to objective IV.d.2">IV.d.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> the long-term history of technological development and <span class="skill skill-analyze">Analyze</span> the impact of current changes in light of that history</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                        <li class="course" data-level="" data-subject="ai"><span class="course-name">AI courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVd3">
+                    <a class="objective-ref" href="#obj-IVd3" title="Link to objective IV.d.3">IV.d.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> the impact of technology on military capabilities and conflict</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                        <li class="course" data-level="" data-subject="ai security"><span class="course-name">Security, AI, and robotics courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-IVd4">
+                    <a class="objective-ref" href="#obj-IVd4" title="Link to objective IV.d.4">IV.d.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-identify">Identify</span> the underlying epistemological assumptions of Computer Science and <span class="skill skill-aware">Be aware of</span> how concepts such as abstraction, scalability, measurability, and efficiency shape technological design and value systems</p>
+                      <ul>
+                        <li><span class="skill skill-analyze">Analyze</span> the limitations and potential harms of naturalizing these assumptions and <span class="skill skill-implement">Implement</span> computing practices that acknowledge these limitations</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="foundations" data-subject=""><span class="course-name">Foundations courses</span></li>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingEight">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                How likely is it that I will get an STA position if I apply?
+          <div class="accordion-item area" id="area-V">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#area-V-body" aria-expanded="false" aria-controls="area-V-body">
+                <span class="area-numeral">V</span>
+                <span class="area-heading">
+                  <span class="area-title">Stakeholder Engagement</span>
+                  <span class="area-meta"><span class="area-count" data-total="8">8 objectives</span></span>
+                </span>
               </button>
-            </h2>
-            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </h3>
+            <div id="area-V-body" class="accordion-collapse collapse area-collapse">
+              <div class="accordion-body">
+                <div class="subsection">
+                  <article class="objective" id="obj-V1">
+                    <a class="objective-ref" href="#obj-V1" title="Link to objective V.1">V.1</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> the concept of a stakeholder and <span class="skill skill-identify">Identify</span> various stakeholders in a given project</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intro" data-subject=""><span class="course-name">Introductory courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-V2">
+                    <a class="objective-ref" href="#obj-V2" title="Link to objective V.2">V.2</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-identify">Identify</span> and <span class="skill skill-implement">Implement</span> stakeholder needs</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intermediate" data-subject=""><span class="course-name">Intermediate-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-V3">
+                    <a class="objective-ref" href="#obj-V3" title="Link to objective V.3">V.3</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> how different stakeholders&rsquo; needs may conflict, and potential resolution strategies</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intermediate upper" data-subject=""><span class="course-name">Intermediate- and upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-V4">
+                    <a class="objective-ref" href="#obj-V4" title="Link to objective V.4">V.4</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-understand">Understand</span> how to communicate technical content to non-technical stakeholders</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-V5">
+                    <a class="objective-ref" href="#obj-V5" title="Link to objective V.5">V.5</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> the alignment of a project with stakeholders&rsquo; intended goals</p>
+                      <ul>
+                        <li><span class="skill skill-analyze">Analyze</span> conflicting positions on the extent to which stakeholder requests should be implemented in cases where stakeholder requests may diverge from what might benefit them (i.e., paternalism versus libertarianism)</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-V6">
+                    <a class="objective-ref" href="#obj-V6" title="Link to objective V.6">V.6</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-identify">Identify</span> and <span class="skill skill-analyze">Analyze</span> techno-solutionist attitudes and approaches</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="intermediate" data-subject=""><span class="course-name">Intermediate-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-V7">
+                    <a class="objective-ref" href="#obj-V7" title="Link to objective V.7">V.7</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-analyze">Analyze</span> the potential negative impacts (e.g., unintended consequences, externalities) of technologies that are ostensibly designed for social benefit</p>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="upper" data-subject=""><span class="course-name">Upper-level courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="objective" id="obj-V8">
+                    <a class="objective-ref" href="#obj-V8" title="Link to objective V.8">V.8</a>
+                    <div class="objective-text">
+                      <p><span class="skill skill-aware">Be aware of</span> responsible disclosure</p>
+                      <ul>
+                        <li><span class="skill skill-aware">Be aware of</span> the existence of mechanisms for reporting technological vulnerabilities to responsible organizations</li>
+                        <li><span class="skill skill-analyze">Analyze</span> possible impacts of releasing security vulnerabilities publicly</li>
+                      </ul>
+                    </div>
+                    <div class="objective-courses">
+                      <span class="courses-label">Suggested courses</span>
+                      <ul>
+                        <li class="course" data-level="" data-subject="security"><span class="course-name">Security courses</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
-          </div> 
+          </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingNinw">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                Apart from being an STA, how can I get involved in Socially Responsible Computing at Brown?
-              </button>
-            </h2>
-            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
             </div>
-          </div> 
 
+            <p class="no-results" id="no-results" hidden>
+              No learning objectives match these filters. Try removing a filter or searching for a different term.
+            </p>
+          </div>
         </div>
-  </div>
-    </section>
+      </div>
+    </section><!-- End Learning objectives -->
+
 
   </main><!-- End #main -->
 
       <div id="site-footer"></div>
-  
+
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+
     <div id="preloader"></div>
-  
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -313,10 +1166,11 @@
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-  
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-  
+    <script src="assets/js/src-curriculum.js"></script>
+
   </body>
-  
-  </html>
+
+</html>

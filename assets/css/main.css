@@ -6,25 +6,19 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* The site's only two web fonts: Lora (body text) and Manrope (headings and UI) */
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  /* --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  /* --font-secondary: "Inter", sans-serif; */
-  /* --font-default: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif; */
   --font-primary: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-secondary: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-default: "Lora", Georgia, serif;
-
-  /* --font-primary: "IBM Plex Sans", sans-serif;
-  --font-secondary: "Source Sans 3", sans-serif;*/
-  }
+}
 
 h1,
 h2,
@@ -75,6 +69,18 @@ input[type="submit"],
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+}
+
+/* Body text in page content: same comfortable line spacing as the curriculum page.
+   Components that set their own line-height (cards, labels, etc.) keep it. */
+main p,
+main li {
+  line-height: 1.65;
+}
+
+/* Section titles are written as <p> but styled as headings; keep their original spacing */
+main .section-header p {
+  line-height: 1.5;
 }
 
 a {
